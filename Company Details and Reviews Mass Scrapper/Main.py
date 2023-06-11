@@ -19,11 +19,12 @@ def main():
     # Modify company_code, company_name and account_number (see accounts.json)
     # e.g., for Visa - https://www.glassdoor.sg/Overview/Working-at-Visa-Inc-EI_IE3035.11,19.htm
     # e.g., Company_name = Visa, Company_code = 3035
-    company_code = 1 
-    company_name = "Demo"
+    company_code =  22942
+    company_name = "Africare-Reviews"
+
 
     # Will be resolved to Facebook_{account_number} in accounts.json. 
-    account_number = 2
+    account_number = 1
 
     # will scrape 100 urls (1000 reviews) before dumping results to json
     batch_size = 100 
@@ -32,14 +33,14 @@ def main():
     review_worker = GlassDoorReviewWorker(company_code, company_name, account_number, batch_size)
     
     """Uncomment to scrape one company: i.e., scrape the company_code and company_name provided above"""
-    # review_worker.start_one_scrape()
+    review_worker.start_one_scrape()
 
     """Uncomment if you want to resume a scrape that terminated prematurely"""
     # review_worker.resume_scrape()
 
     """Uncomment if you want to scrape multiple companies. (Provide this json file in FILE_PATH)"""
-    FILE_PATH = os.path.join(".", "Industries", "Airlines.json") # Modify this
-    review_worker.start_multiple_scrapes(FILE_PATH) 
+    #FILE_PATH = os.path.join(".", "Industries", "Airlines.json") # Modify this
+    #review_worker.start_multiple_scrapes(FILE_PATH) 
 
 if __name__ == "__main__":
   main()

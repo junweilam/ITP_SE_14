@@ -49,6 +49,7 @@ class WebDriver(ABC):
     def close(self):
         self.driver.close()
 
+
 class ChromeWebDriver(WebDriver):
     def __init__(self):
         self.webpage = "chrome://newtab"

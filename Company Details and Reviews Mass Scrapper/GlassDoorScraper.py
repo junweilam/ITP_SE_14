@@ -21,6 +21,8 @@ import sys
 GLASSDOOR_WEBSITE = "https://www.glassdoor.sg/index.htm"
 MISCELLANOUS_DIRECTORY = os.path.join(".", "miscellanous")
 DATA_DIRECTORY = os.path.join("..", "data")
+def checkReviewRating(class_name):
+    return
 
 class GlassDoorScraper:
     def __init__(self, driver, company_name, company_code):
@@ -34,6 +36,8 @@ class GlassDoorScraper:
         self.list_of_review_pages = []
         self.reviews_collected = []
         self.batch_counter = 0
+
+
             
     def login_using_facebook(self, account_type):
         self._set_credentials(account_type)
@@ -133,6 +137,20 @@ class GlassDoorScraper:
         # Find all review elements
         review_elements = reviews_feed.find_all("li", class_="empReview")
         return review_elements
+    
+    def checkReviewRating(class_name):
+        if class_name == 'css-1mfncox':
+            return 1
+        elif class_name == 'css-11p3h8x':
+            return 2
+        elif class_name == "css-k58126":
+            return 3
+        elif class_name == "css-94nhxw":
+            return 4
+        elif class_name == "css-11w4osi":
+            return 5
+        else:
+            return 0
 
     def _extract_reviews(self, review_elements):
         reviews = []   
@@ -169,7 +187,68 @@ class GlassDoorScraper:
                 cons = review_element.find('span', attrs={'data-test': 'cons'}).text.strip()
             except:
                 cons = "N/A"
-            review = {'review_title': review_title, 'rating': rating, 'reviewer_affiliation': reviewer_affiliation ,'job_date': job_date, 'job_title': job_title, 'duration': duration, 'pros': pros, 'cons': cons}
+                
+            #getting additional ratings --------------------- MARCUS HELP ME CHECK THIS PART-------------
+            try:
+                additionalRatings = review_element.find('div', class_='tooltipContainer').find('ul').find('li')
+                #item = 0
+                wlAdded = False
+                curAdded = False
+                drAdded = False
+                carAdded = False
+                corAdded = False
+                srAdded = False
+                reviewHeader = additionalRatings.find('div').text.strip()
+                rating_class = additionalRatings.find('div', class_='e1hd5jg10')
+                #rating_class = rating_class.replace("e1hd5jg10", '')
+                rating_class= rating_class.get('class')[0]
+                print(reviewHeader)
+                print(type(rating_class))
+            
+                if reviewHeader == "Work/Life Balance":
+                    wlAdded = True
+                    worklife_rating = checkReviewRating(rating_class)
+                    
+                    print(worklife_rating)
+                elif reviewHeader == "Culture &amp; Values":
+                    curAdded = True
+                    culture_rating = checkReviewRating(rating_class)
+                elif reviewHeader == "Diversity and Inclusion":
+                    drAdded = True
+                    diversity_rating = checkReviewRating(rating_class)
+                elif reviewHeader == "Career Opportunities":
+                    carAdded = True
+                    career_rating = checkReviewRating(rating_class)
+                elif reviewHeader == "Compensation and Benefits":
+                    corAdded = True
+                    compensation_rating = (checkReviewRating(rating_class))
+                elif reviewHeader == "Senior Management":
+                    srAdded = True
+                    senior_rating = (checkReviewRating(rating_class))
+                item+=1
+            #if item != 6:
+                if not wlAdded:
+                    worklife_rating = "N/A"
+                if not curAdded:
+                    culture_rating = "N/A"
+                if not drAdded:
+                    diversity_rating = "N/A"
+                if not carAdded:
+                    career_rating = "N/A"
+                if not corAdded:
+                    compensation_rating = "N/A"
+                if not srAdded:
+                    senior_rating = "N/A"
+            except:
+                worklife_rating = "N/A"
+                culture_rating = "N/A"
+                diversity_rating = "N/A"
+                career_rating = "N/A"
+                compensation_rating = "N/A"
+                senior_rating = "N/A"
+        #--------------------- MARCUS HELP ME CHECK THIS PART-------------
+            #Once Finish add to review list and append.
+            review = {'1': worklife_rating,'2':culture_rating, '3': diversity_rating,'4':career_rating,'5':compensation_rating,'6':senior_rating,'review_title': review_title, 'rating': rating, 'reviewer_affiliation': reviewer_affiliation ,'job_date': job_date, 'job_title': job_title, 'duration': duration, 'pros': pros, 'cons': cons}
             reviews.append(review)
         return reviews
 
