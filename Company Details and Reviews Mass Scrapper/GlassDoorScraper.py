@@ -149,6 +149,25 @@ class GlassDoorScraper:
             return 5
         else:
             return 0
+    def checkRecommendation(self,class_name):
+        if "css-hcqxoa" in class_name:
+            return "Yes"
+        elif "css-1h93d4v" in class_name:
+            return "Neutral"
+        elif "css-1kiw93k" in class_name:
+            return "No"
+        else:
+            return "N/A"
+
+    def checkBusinessOutlook(self,class_name):
+        if "css-hcqxoa" in class_name:
+            return "Good"
+        elif "css-1h93d4v" in class_name:
+            return "Neutral"
+        elif "css-1kiw93k" in class_name:
+            return "Bad"
+        else:
+            return "N/A"
 
     def _extract_reviews(self, review_elements):
         reviews = []   
@@ -186,7 +205,7 @@ class GlassDoorScraper:
             except:
                 cons = "N/A"
                 
-            #getting additional ratings --------------------- MARCUS HELP ME CHECK THIS PART-------------
+            #getting additional ratings
             try:
                 additionalRatings = review_element.find('div', class_='tooltipContainer').find('ul').findAll('li')
                 #item = 0
@@ -199,7 +218,6 @@ class GlassDoorScraper:
                 for aRating in additionalRatings:
                     reviewHeader = aRating.find('div').text.strip()
                     rating_class = aRating.find('div', class_='e1hd5jg10')
-                    #rating_class = rating_class.replace("e1hd5jg10", '')
                     rating_class = rating_class.get('class')[0]
                     if reviewHeader == "Work/Life Balance":
                         wlAdded = True
@@ -239,9 +257,48 @@ class GlassDoorScraper:
                 career_rating = "N/A"
                 compensation_rating = "N/A"
                 senior_rating = "N/A"
-        #--------------------- MARCUS HELP ME CHECK THIS PART-------------
+
+            #recommendation, ceo approval and business outlook
+            try:
+                company_RCB = review_element.find('div', class_='reviewBodyCell').find_all('div')
+                count = 0
+                for item in company_RCB:
+                    if count == 0:
+                        imageType = item.find('span')
+                        imageType = imageType['class'][1]
+                        recommended = self.checkRecommendation(imageType)
+                    elif count == 1:
+                        imageType = item.find('span')
+                        imageType = imageType['class'][1]
+                        ceo_approval = self.checkRecommendation(imageType)
+                    else:
+                        imageType = item.find('span')
+                        imageType = imageType['class'][1]
+                        business_outlook = self.checkBusinessOutlook(imageType)
+                    count+=1
+            except:
+                recommended = 'N/A'
+                ceo_approval = 'N/A'
+                business_outlook = 'N/A'
+                
             #Once Finish add to review list and append.
-            review = {'Work/Life Balance': worklife_rating,'Culture & Values':culture_rating, 'Diversity and Inclusion': diversity_rating,'Career Opportunities':career_rating,'Compensation and Benefits':compensation_rating,'Senior Management':senior_rating,'review_title': review_title, 'rating': rating, 'reviewer_affiliation': reviewer_affiliation ,'job_date': job_date, 'job_title': job_title, 'duration': duration, 'pros': pros, 'cons': cons}
+            review = {'Recommended': recommended,
+                      'CEO Approval': ceo_approval,
+                      'Business Outlook': business_outlook,
+                      'Work/Life Balance': worklife_rating,
+                      'Culture & Values':culture_rating, 
+                      'Diversity and Inclusion': diversity_rating,
+                      'Career Opportunities':career_rating,
+                      'Compensation and Benefits':compensation_rating,
+                      'Senior Management':senior_rating,
+                      'review_title': review_title, 
+                      'rating': rating, 
+                      'reviewer_affiliation': reviewer_affiliation ,
+                      'job_date': job_date, 
+                      'job_title': job_title, 
+                      'duration': duration, 
+                      'pros': pros, 
+                      'cons': cons}
             reviews.append(review)
         return reviews
 
