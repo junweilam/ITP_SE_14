@@ -20,7 +20,7 @@ import sys
 
 GLASSDOOR_WEBSITE = "https://www.glassdoor.sg/index.htm"
 MISCELLANOUS_DIRECTORY = os.path.join(".", "miscellanous")
-DATA_DIRECTORY = os.path.join("..", "data")
+DATA_DIRECTORY = os.path.join("..", "data/Singapore/") #Change to your own country
 
 class GlassDoorScraper:
     def __init__(self, driver, company_name, company_code):
@@ -250,7 +250,6 @@ class GlassDoorScraper:
                 if not srAdded:
                     senior_rating = "N/A"
             except:
-                print("Excepted")
                 worklife_rating = "N/A"
                 culture_rating = "N/A"
                 diversity_rating = "N/A"
@@ -280,7 +279,7 @@ class GlassDoorScraper:
                 recommended = 'N/A'
                 ceo_approval = 'N/A'
                 business_outlook = 'N/A'
-                
+
             #Once Finish add to review list and append.
             review = {'Recommended': recommended,
                       'CEO Approval': ceo_approval,
@@ -432,7 +431,14 @@ class GlassDoorScraper:
             mission = mission_element.text.strip()
         except AttributeError:
             mission = "Not provided on Glassdoor"
-        # Return the company information as a dictionary
+
+        try:
+            competitor = soup.find("p", {"data-test":"employerCompetitors"}).find('span')
+            competitor = competitor.text.strip()
+            #compeititors = compeititor
+        except AttributeError:
+            competitor ="Not provided on Glassdoor"
+        #Return the company information as a dictionary
         company_info = {
                 "company_name": self.company_name,
                 "company_code": self.company_code,
@@ -444,7 +450,8 @@ class GlassDoorScraper:
                 "industry": industry,
                 "revenue": revenue,
                 "employer_description": employer_description,
-                "mission": mission
+                "mission": mission,
+                "competitors": competitor
             }
 
         return company_info

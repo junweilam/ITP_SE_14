@@ -16,9 +16,9 @@ import os
 import json 
 
 MISCELLANOUS_DIRECTORY = os.path.join(".", "miscellanous")
-DATA_DIRECTORY = os.path.join("..", "data")
+DATA_DIRECTORY = os.path.join("..", "data/Singapore") #MODIFY THIS TO YOUR COUNTRY
 
-DESTINATION_DIRECTORY = os.path.join(DATA_DIRECTORY, "Company Information2")
+DESTINATION_DIRECTORY = os.path.join(DATA_DIRECTORY, "Company Overviews")
 
 class GlassDoorCompanyInformationWorker:
     def __init__(self, company_code, company_name, account_number):
@@ -100,7 +100,7 @@ def main():
 
     # Create worker object and start scraping for company information
     worker = GlassDoorCompanyInformationWorker(company_code, company_name, account_number)
-    worker.scrape_multiple_companies("./Industries/CompanyInfoScrape.json") # Modify this
+    worker.scrape_multiple_companies("./Companies/example.json") # Modify this
 
 if __name__ == "__main__":
         main()
