@@ -21,8 +21,6 @@ import sys
 GLASSDOOR_WEBSITE = "https://www.glassdoor.sg/index.htm"
 MISCELLANOUS_DIRECTORY = os.path.join(".", "miscellanous")
 DATA_DIRECTORY = os.path.join("..", "data")
-def checkReviewRating(class_name):
-    return
 
 class GlassDoorScraper:
     def __init__(self, driver, company_name, company_code):
@@ -138,10 +136,10 @@ class GlassDoorScraper:
         review_elements = reviews_feed.find_all("li", class_="empReview")
         return review_elements
     
-    def checkReviewRating(class_name):
-        if class_name == 'css-1mfncox':
+    def checkReviewRating(self,class_name):
+        if class_name == "css-1mfncox":
             return 1
-        elif class_name == 'css-11p3h8x':
+        elif class_name == "css-11p3h8x":
             return 2
         elif class_name == "css-k58126":
             return 3
@@ -190,7 +188,7 @@ class GlassDoorScraper:
                 
             #getting additional ratings --------------------- MARCUS HELP ME CHECK THIS PART-------------
             try:
-                additionalRatings = review_element.find('div', class_='tooltipContainer').find('ul').find('li')
+                additionalRatings = review_element.find('div', class_='tooltipContainer').find('ul').findAll('li')
                 #item = 0
                 wlAdded = False
                 curAdded = False
@@ -198,35 +196,29 @@ class GlassDoorScraper:
                 carAdded = False
                 corAdded = False
                 srAdded = False
-                reviewHeader = additionalRatings.find('div').text.strip()
-                rating_class = additionalRatings.find('div', class_='e1hd5jg10')
-                #rating_class = rating_class.replace("e1hd5jg10", '')
-                rating_class= rating_class.get('class')[0]
-                print(reviewHeader)
-                print(type(rating_class))
-            
-                if reviewHeader == "Work/Life Balance":
-                    wlAdded = True
-                    worklife_rating = checkReviewRating(rating_class)
-                    
-                    print(worklife_rating)
-                elif reviewHeader == "Culture &amp; Values":
-                    curAdded = True
-                    culture_rating = checkReviewRating(rating_class)
-                elif reviewHeader == "Diversity and Inclusion":
-                    drAdded = True
-                    diversity_rating = checkReviewRating(rating_class)
-                elif reviewHeader == "Career Opportunities":
-                    carAdded = True
-                    career_rating = checkReviewRating(rating_class)
-                elif reviewHeader == "Compensation and Benefits":
-                    corAdded = True
-                    compensation_rating = (checkReviewRating(rating_class))
-                elif reviewHeader == "Senior Management":
-                    srAdded = True
-                    senior_rating = (checkReviewRating(rating_class))
-                item+=1
-            #if item != 6:
+                for aRating in additionalRatings:
+                    reviewHeader = aRating.find('div').text.strip()
+                    rating_class = aRating.find('div', class_='e1hd5jg10')
+                    #rating_class = rating_class.replace("e1hd5jg10", '')
+                    rating_class = rating_class.get('class')[0]
+                    if reviewHeader == "Work/Life Balance":
+                        wlAdded = True
+                        worklife_rating = self.checkReviewRating(rating_class)
+                    elif reviewHeader == "Culture & Values":
+                        curAdded = True
+                        culture_rating = self.checkReviewRating(rating_class)
+                    elif reviewHeader == "Diversity and Inclusion":
+                        drAdded = True
+                        diversity_rating = self.checkReviewRating(rating_class)
+                    elif reviewHeader == "Career Opportunities":
+                        carAdded = True
+                        career_rating = self.checkReviewRating(rating_class)
+                    elif reviewHeader == "Compensation and Benefits":
+                        corAdded = True
+                        compensation_rating = self.checkReviewRating(rating_class)
+                    elif reviewHeader == "Senior Management":
+                        srAdded = True
+                        senior_rating = self.checkReviewRating(rating_class)
                 if not wlAdded:
                     worklife_rating = "N/A"
                 if not curAdded:
@@ -240,6 +232,7 @@ class GlassDoorScraper:
                 if not srAdded:
                     senior_rating = "N/A"
             except:
+                print("Excepted")
                 worklife_rating = "N/A"
                 culture_rating = "N/A"
                 diversity_rating = "N/A"
