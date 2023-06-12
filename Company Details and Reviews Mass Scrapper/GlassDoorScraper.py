@@ -241,7 +241,7 @@ class GlassDoorScraper:
                 senior_rating = "N/A"
         #--------------------- MARCUS HELP ME CHECK THIS PART-------------
             #Once Finish add to review list and append.
-            review = {'1': worklife_rating,'2':culture_rating, '3': diversity_rating,'4':career_rating,'5':compensation_rating,'6':senior_rating,'review_title': review_title, 'rating': rating, 'reviewer_affiliation': reviewer_affiliation ,'job_date': job_date, 'job_title': job_title, 'duration': duration, 'pros': pros, 'cons': cons}
+            review = {'Work/Life Balance': worklife_rating,'Culture & Values':culture_rating, 'Diversity and Inclusion': diversity_rating,'Career Opportunities':career_rating,'Compensation and Benefits':compensation_rating,'Senior Management':senior_rating,'review_title': review_title, 'rating': rating, 'reviewer_affiliation': reviewer_affiliation ,'job_date': job_date, 'job_title': job_title, 'duration': duration, 'pros': pros, 'cons': cons}
             reviews.append(review)
         return reviews
 
