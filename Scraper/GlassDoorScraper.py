@@ -20,7 +20,8 @@ import sys
 
 GLASSDOOR_WEBSITE = "https://www.glassdoor.sg/index.htm"
 MISCELLANOUS_DIRECTORY = os.path.join(".", "miscellanous")
-DATA_DIRECTORY = os.path.join("..", "data/Singapore/") #Change to your own country
+DATA_DIRECTORY_REVIEWS = os.path.join("..", "data/Singapore/reviews") #Change to your own country
+DATA_DIRECTORY_INTERVIEWS = os.path.join("..", "data/Singapore/interviews") #Change to your own country
 
 class GlassDoorScraper:
     def __init__(self, driver, company_name, company_code):
@@ -30,11 +31,14 @@ class GlassDoorScraper:
         self.company_code = company_code
         self.company_name = company_name
         self.number_of_review_pages = 0
+        self.number_of_interview_pages = 0
         self.reviews_count = 0
+        self.interviews_count = 0
         self.list_of_review_pages = []
+        self.list_of_interview_pages = []
         self.reviews_collected = []
+        self.interviews_collected = []
         self.batch_counter = 0
-
 
             
     def login_using_facebook(self, account_type):
@@ -76,6 +80,19 @@ class GlassDoorScraper:
             self.list_of_review_pages.append(url)
 
         return self.list_of_review_pages
+    
+    def generate_interview_urls(self):
+        """Generates the list of URLs containing interviews"""
+        url = f"https://www.glassdoor.sg/Interview/{self.company_name}-Interview-Questions-E{self.company_code}.htm"
+        self.driver.navigate_to(url)
+        self._count_pages_to_scrape_interview(self.driver.get_current_url())
+        self.list_of_interview_pages.append(url)
+
+        for page_num in range(2, self.number_of_interview_pages):
+            url = f"https://www.glassdoor.sg/Interview/{self.company_name}-Interview-Questions-E{self.company_code}_P{page_num}.htm"
+            self.list_of_interview_pages.append(url)
+
+        return self.list_of_interview_pages
 
     def _set_credentials(self, account_type):
         # Load JSON data from file
@@ -111,6 +128,20 @@ class GlassDoorScraper:
         print(log)
         self.update_progress(log) # Update progress.md file
 
+    def _count_pages_to_scrape_interview(self, url):
+        """Identify number of pages that need to be scrapped and logs information in progress.md"""
+        html_source = self.driver.get_html_source()
+        soup = BeautifulSoup(html_source, "html.parser")
+        interviews_count_str = soup.find('div', {'data-test': 'pagination-footer-text'}).text
+        if interviews_count_str is None:
+            interviews_count = 9
+        interviews_count = int(interviews_count_str.replace(',', '').split()[-2])
+        self.interviews_count = interviews_count
+        self.number_of_interview_pages = math.ceil(interviews_count / 10) + 1
+        log = f"{interviews_count} interviews in {self.number_of_interview_pages} urls"
+        print(log)
+        self.update_progress(log) # Update progress.md file
+
     def _get_reviews_on_page(self, url):
         """ Retrieves the 10 reviews listed on a page"""
         # Navigate to a company's Glassdoor page
@@ -135,6 +166,31 @@ class GlassDoorScraper:
         # Find all review elements
         review_elements = reviews_feed.find_all("li", class_="empReview")
         return review_elements
+    
+    def _get_interviews_on_page(self, url):
+        """ Retrieves the 10 interviews listed on a page"""
+        # Navigate to a company's Glassdoor page
+        self.driver.navigate_to(url)
+        try:
+            # Wait for the reviews to load
+            interviews_section = WebDriverWait(self.driver, 30).until(EC.presence_of_element_located((By.XPATH, '//div[@data-test="InterviewList"]')))
+        except TimeoutException:
+             self._get_interviews_on_page(self)
+             print(f"{url}: Failed to load: '//div[@data-test=InterviewList]'")
+             sys.exit(1)
+
+        # Get the HTML source of the reviews section
+        interviews_html = interviews_section.get_attribute("innerHTML")
+
+        # Parse the HTML using BeautifulSoup
+        soup = BeautifulSoup(interviews_html, "html.parser")
+    
+        # Find the reviews feed element
+        #interviews_feed = soup.find("div", id="ReviewsFeed")
+       
+        # Find all review elements
+        interview_elements = soup.find_all("div", class_="mt-0 mb-0 my-md-std p-std gd-ui-module css-cup1a5 ec4dwm00")
+        return interview_elements
     
     def checkReviewRating(self,class_name):
         if class_name == "css-1mfncox":
@@ -300,16 +356,106 @@ class GlassDoorScraper:
                       'cons': cons}
             reviews.append(review)
         return reviews
+    
+    #ADD SCRAPING CODE FOR DIFF ATTRIBUTES HERE
+    def _extract_interviews(self, interview_elements):
+        interviews = []   
+        for interview_element in interview_elements:
+            try:
+                #Get Date
+                date_element = interview_element.find("time")
+                date_text = date_element.get_text(strip=True)
+            except:
+                date_text = 'N/A'
+            try:
+                title_element = interview_element.find("h2", class_="el6ke055").find("a")
+                title_text = title_element.get_text(strip=True)
+            except:
+                title_text = 'N/A'
+
+            try:
+                #get results
+                #get experiences
+                #get difficulties
+                resultBool = False
+                experienceBool = False
+                difficultyBool = False
+                total_field_elements = interview_element.find("div", class_="col-12").select("div.d-block.d-sm-inline-block, div.d-block.d-sm-inline-block.mr.mb-xsm.mb-sm-0")
+                for element in total_field_elements:
+                    field_text = element.find("span", class_="mb-xxsm").text.strip()
+                    if "Offer" in field_text: 
+                        resultBool = True
+                        results = field_text
+                    elif "Experience" in field_text:
+                        experienceBool = True
+                        experiences = field_text
+                    elif "Interview" in field_text:
+                        difficultyBool = True
+                        difficulties = field_text.replace('\n', " ")
+                    if resultBool == False:
+                        results = 'N/A'
+                    if experienceBool == False:
+                        experiences = 'N/A'
+                    if difficultyBool == False:
+                        difficulties = 'N/A'
+            except:
+                results = 'N/A'
+                experiences = 'N/A'
+                difficulties = 'N/A'
+
+            try:
+                #get application type
+                applicationText = interview_element.find("div", class_="mt").find("p").text
+                applicationTypes = applicationText
+                
+            except:
+                applicationTypes = 'N/A'
+                
+            try:
+                #get interview descriptions
+                interviewDesc = interview_element.find("p", class_="css-w00cnv").text
+                interviewDescriptions = interviewDesc
+            except:
+                interviewDescriptions = 'N/A'
+                
+            try:
+                #get interview questions
+                interviewQues = interview_element.find("ul", class_="e151mjlk2").find("li").find("span").text
+                interviewQuestions = interviewQues
+            except:
+                interviewQuestions = 'N/A'
+        
+            interview = {'date': date_text,
+                         'title': title_text,
+                         'results': results,
+                         'experience': experiences,
+                         'difficulties': difficulties,
+                         'Application Type':applicationTypes,
+                        'Interview Descriptions':interviewDescriptions,
+                        'Interview Questions':interviewQuestions}
+            interviews.append(interview)
+        return interviews
 
     def dump_reviews_json(self, all_reviews):
         """Dump the reviews to a JSON file"""
-        folder_path = os.path.join(DATA_DIRECTORY, self.company_name)
+        folder_path = os.path.join(DATA_DIRECTORY_REVIEWS, self.company_name)
         if not os.path.exists(folder_path):
             os.makedirs(folder_path)
 
         file_path = os.path.join(folder_path, f"{self.identifier}-{self.company_name}-{self.batch_counter}.json")
         with open(file_path, 'a') as file:
             json.dump(all_reviews, file)
+        self.batch_counter += 1
+    
+    def dump_interviews_json(self, all_interviews):
+        """Dump the reviews to a JSON file"""
+        folder_path = os.path.join(DATA_DIRECTORY_INTERVIEWS, self.company_name)
+        if not os.path.exists(folder_path):
+            os.makedirs(folder_path)
+
+        file_path = os.path.join(folder_path, f"{self.identifier}-{self.company_name}-{self.batch_counter}.json")
+        with open(file_path, 'a') as file:
+            json.dump(all_interviews, file)
         self.batch_counter += 1
  
     def dump_scrape_error_log(self, failed_url):

@@ -2,6 +2,7 @@ from GenericDriver import FireFoxWebDriver
 from GenericDriver import ChromeWebDriver
 from GlassDoorScraper import GlassDoorScraper
 from GlassDoorReviewWorker import GlassDoorReviewWorker
+from GlassDoorInterviewWorker import GlassDoorInterviewWorker
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import InvalidSessionIdException
@@ -19,8 +20,8 @@ def main():
     # Modify company_code, company_name and account_number (see accounts.json)
     # e.g., for Visa - https://www.glassdoor.sg/Overview/Working-at-Visa-Inc-EI_IE3035.11,19.htm
     # e.g., Company_name = Visa, Company_code = 3035
-    company_code =  22942
-    company_name = "Africare-Reviews"
+    company_code =  3046
+    company_name = "YMCA"
 
 
     # Will be resolved to Facebook_{account_number} in accounts.json. 
@@ -30,7 +31,7 @@ def main():
     batch_size = 100 
 
     # Create review worker object to start scraping for reviews
-    review_worker = GlassDoorReviewWorker(company_code, company_name, account_number, batch_size)
+    #review_worker = GlassDoorReviewWorker(company_code, company_name, account_number, batch_size)
     
     """Uncomment to scrape one company: i.e., scrape the company_code and company_name provided above"""
     #review_worker.start_one_scrape()
@@ -39,8 +40,14 @@ def main():
     # review_worker.resume_scrape()
 
     """Uncomment if you want to scrape multiple companies. (Provide this json file in FILE_PATH)"""
-    FILE_PATH = os.path.join(".", "Companies", "example.json") # Modify this
-    review_worker.start_multiple_scrapes(FILE_PATH) 
+    #FILE_PATH = os.path.join(".", "Companies", "example.json") # Modify this
+    #review_worker.start_multiple_scrapes(FILE_PATH) 
+
+    interview_worker = GlassDoorInterviewWorker(company_code, company_name, account_number, batch_size)
+
+    #FILE_PATH = os.path.join(".", "Companies", "example.json") # Modify this
+    #interview_worker.start_multiple_scrapes_interview(FILE_PATH) 
+    interview_worker.start_one_scrape_interview()
 
 if __name__ == "__main__":
   main()
