@@ -21,7 +21,7 @@ import sys
 GLASSDOOR_WEBSITE = "https://www.glassdoor.sg/index.htm"
 MISCELLANOUS_DIRECTORY = os.path.join(".", "miscellanous")
 DATA_DIRECTORY_REVIEWS = os.path.join("..", "data/Singapore/reviews") #Change to your own country
-DATA_DIRECTORY_INTERVIEWS = os.path.join("..", "data/Singapore/interviews") #Change to your own country
+DATA_DIRECTORY_INTERVIEWS = os.path.join("..", "data/US/interviews") #Change to your own country
 
 class GlassDoorScraper:
     def __init__(self, driver, company_name, company_code):
@@ -112,8 +112,8 @@ class GlassDoorScraper:
         except TimeoutException:
             # If the email address element is not found, login failed
             print("Login failed!")
-            self.driver.driver.close()
-            self.driver.clear_cookies()
+            #self.driver.driver.close()
+            #self.driver.clear_cookies()
             return False
 
     def _count_pages_to_scrape(self, url):
@@ -130,17 +130,20 @@ class GlassDoorScraper:
 
     def _count_pages_to_scrape_interview(self, url):
         """Identify number of pages that need to be scrapped and logs information in progress.md"""
-        html_source = self.driver.get_html_source()
-        soup = BeautifulSoup(html_source, "html.parser")
-        interviews_count_str = soup.find('div', {'data-test': 'pagination-footer-text'}).text
-        if interviews_count_str is None:
-            interviews_count = 9
-        interviews_count = int(interviews_count_str.replace(',', '').split()[-2])
-        self.interviews_count = interviews_count
-        self.number_of_interview_pages = math.ceil(interviews_count / 10) + 1
-        log = f"{interviews_count} interviews in {self.number_of_interview_pages} urls"
-        print(log)
-        self.update_progress(log) # Update progress.md file
+        try:
+            html_source = self.driver.get_html_source()
+            soup = BeautifulSoup(html_source, "html.parser")
+            interviews_count_str = soup.find('div', {'data-test': 'pagination-footer-text'}).text
+            if interviews_count_str is None:
+                interviews_count = 9
+            interviews_count = int(interviews_count_str.replace(',', '').split()[-2])
+            self.interviews_count = interviews_count
+            self.number_of_interview_pages = math.ceil(interviews_count / 10) + 1
+            log = f"{interviews_count} interviews in {self.number_of_interview_pages} urls"
+            print(log)
+            self.update_progress(log) # Update progress.md file
+        except:
+            pass
 
     def _get_reviews_on_page(self, url):
         """ Retrieves the 10 reviews listed on a page"""
