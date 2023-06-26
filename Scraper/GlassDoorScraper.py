@@ -17,11 +17,12 @@ from concurrent.futures import ThreadPoolExecutor
 import os
 import multiprocessing
 import sys 
+from time import sleep
 
 GLASSDOOR_WEBSITE = "https://www.glassdoor.sg/index.htm"
 MISCELLANOUS_DIRECTORY = os.path.join(".", "miscellanous")
-DATA_DIRECTORY_REVIEWS = os.path.join("..", "data/Singapore/reviews") #Change to your own country
-DATA_DIRECTORY_INTERVIEWS = os.path.join("..", "data/Singapore/interviews") #Change to your own country
+DATA_DIRECTORY_REVIEWS = os.path.join("..", "data/USA/reviews") #Change to your own country
+DATA_DIRECTORY_INTERVIEWS = os.path.join("..", "data/USA/interviews") #Change to your own country
 
 class GlassDoorScraper:
     def __init__(self, driver, company_name, company_code):
@@ -120,11 +121,15 @@ class GlassDoorScraper:
         """Identify number of pages that need to be scrapped and logs information in progress.md"""
         html_source = self.driver.get_html_source()
         soup = BeautifulSoup(html_source, "html.parser")
-        reviews_count_str = soup.find('div', {'data-test': 'pagination-footer-text'}).text
-        reviews_count = int(reviews_count_str.replace(',', '').split()[-2])
-        self.reviews_count = reviews_count
-        self.number_of_review_pages = math.ceil(reviews_count / 10) + 1
-        log = f"{reviews_count} reviews in {self.number_of_review_pages} urls"
+        try:
+            reviews_count_str = soup.find('div', {'data-test': 'pagination-footer-text'}).text
+            reviews_count = int(reviews_count_str.replace(',', '').split()[-2])
+            self.reviews_count = reviews_count
+            self.number_of_review_pages = math.ceil(reviews_count / 10) + 1
+            log = f"{reviews_count} reviews in {self.number_of_review_pages} urls"
+        except:
+            self.number_of_interview_pages = 1
+            log = f"Less than 10 reviews in {self.number_of_review_pages} urls"
         print(log)
         self.update_progress(log) # Update progress.md file
 
@@ -132,40 +137,43 @@ class GlassDoorScraper:
         """Identify number of pages that need to be scrapped and logs information in progress.md"""
         html_source = self.driver.get_html_source()
         soup = BeautifulSoup(html_source, "html.parser")
-        interviews_count_str = soup.find('div', {'data-test': 'pagination-footer-text'}).text
-        if interviews_count_str is None:
-            interviews_count = 9
-        interviews_count = int(interviews_count_str.replace(',', '').split()[-2])
-        self.interviews_count = interviews_count
-        self.number_of_interview_pages = math.ceil(interviews_count / 10) + 1
+        try:
+            interviews_count_str = soup.find('div', {'data-test': 'pagination-footer-text'}).text
+            interviews_count = int(interviews_count_str.replace(',', '').split()[-2])
+            self.interviews_count = interviews_count
+            self.number_of_interview_pages = math.ceil(interviews_count / 10) + 1
+        except:
+            self.number_of_interview_pages = 1
+        
+        
         log = f"{interviews_count} interviews in {self.number_of_interview_pages} urls"
         print(log)
         self.update_progress(log) # Update progress.md file
 
-    def _get_reviews_on_page(self, url):
-        """ Retrieves the 10 reviews listed on a page"""
-        # Navigate to a company's Glassdoor page
-        self.driver.navigate_to(url)
-        try:
-            # Wait for the reviews to load
-            reviews_section = WebDriverWait(self.driver, 30).until(EC.presence_of_element_located((By.XPATH, "//div[@id='ReviewsRef']")))
-        except TimeoutException:
-             self._get_reviews_on_page(self)
-             print(f"{url}: Failed to load: '//div[@id='ReviewsRef'")
-             sys.exit(1)
+    # def _get_reviews_on_page(self, url):
+    #     """ Retrieves the 10 reviews listed on a page"""
+    #     # Navigate to a company's Glassdoor page
+    #     self.driver.navigate_to(url)
+    #     try:
+    #         # Wait for the reviews to load
+    #         reviews_section = WebDriverWait(self.driver, 30).until(EC.presence_of_element_located((By.XPATH, "//div[@id='ReviewsRef']")))
+    #     except TimeoutException:
+    #          self._get_reviews_on_page(self)
+    #          print(f"{url}: Failed to load: '//div[@id='ReviewsRef'")
+    #          sys.exit(1)
 
-        # Get the HTML source of the reviews section
-        reviews_html = reviews_section.get_attribute("innerHTML")
+    #     # Get the HTML source of the reviews section
+    #     reviews_html = reviews_section.get_attribute("innerHTML")
 
-        # Parse the HTML using BeautifulSoup
-        soup = BeautifulSoup(reviews_html, "html.parser")
+    #     # Parse the HTML using BeautifulSoup
+    #     soup = BeautifulSoup(reviews_html, "html.parser")
     
-        # Find the reviews feed element
-        reviews_feed = soup.find("div", id="ReviewsFeed")
+    #     # Find the reviews feed element
+    #     reviews_feed = soup.find("div", id="ReviewsFeed")
        
-        # Find all review elements
-        review_elements = reviews_feed.find_all("li", class_="empReview")
-        return review_elements
+    #     # Find all review elements
+    #     review_elements = reviews_feed.find_all("li", class_="empReview")
+    #     return review_elements
     
     def _get_interviews_on_page(self, url):
         """ Retrieves the 10 interviews listed on a page"""
@@ -191,6 +199,43 @@ class GlassDoorScraper:
         # Find all review elements
         interview_elements = soup.find_all("div", class_="mt-0 mb-0 my-md-std p-std gd-ui-module css-cup1a5 ec4dwm00")
         return interview_elements
+
+
+    def _get_reviews_on_page(self, url):
+        """Retrieves the 10 reviews listed on a page"""
+        # Navigate to a company's Glassdoor page
+        self.driver.navigate_to(url)
+        try:
+            # Wait for the reviews to load
+            reviews_section = WebDriverWait(self.driver, 30).until(EC.presence_of_element_located((By.XPATH, "//div[@id='ReviewsRef']")))
+        except TimeoutException:
+            self._get_reviews_on_page(self)
+            print(f"{url}: Failed to load: '//div[@id='ReviewsRef'")
+            sys.exit(1)
+        filter_btn = self.driver.find_element(By.XPATH, "//button[@data-test='ContentFiltersFilterToggleBtn']/span[1]")
+        filter_btn.click()
+
+        self.driver.find_element(By.XPATH, "//div[@data-test='ContentFiltersSelectalocationDropdownContent']").click()
+        select_loc = self.driver.find_element(By.XPATH, "//div[@data-test='ContentFiltersSelectalocationDropdownContent']/div[1]/div[1]/div[1]/div[1]/input[1]")
+        sleep(1)
+
+        # Edit this based on countries
+        select_loc.send_keys("Singapore - All Cities")
+
+        select_loc.send_keys(Keys.ENTER)
+        # Get the HTML source of the reviews section
+        reviews_html = reviews_section.get_attribute("innerHTML")
+
+        # Parse the HTML using BeautifulSoup
+        soup = BeautifulSoup(reviews_html, "html.parser")
+
+        # Find the reviews feed element
+        reviews_feed = soup.find("div", id="ReviewsFeed")
+
+        # Find all review elements
+        review_elements = reviews_feed.find_all("li", class_="empReview")
+        return review_elements
+
     
     def checkReviewRating(self,class_name):
         if class_name == "css-1mfncox":

@@ -1,0 +1,332 @@
+{
+    "CISV-International": {
+        "company_code": "810202",
+        "company_name": "CISV-International",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Jamie-Oliver-Food-Foundation": {
+        "company_code": "752460",
+        "company_name": "Jamie-Oliver-Food-Foundation",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Over-the-Wall": {
+        "company_code": "2418798",
+        "company_name": "Over-the-Wall",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Mind": {
+        "company_code": "805070",
+        "company_name": "Mind",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Sanger-Institute": {
+        "company_code": "38883",
+        "company_name": "Sanger-Institute",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Motability-Operations": {
+        "company_code": "231606",
+        "company_name": "Motability-Operations",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Samaritans": {
+        "company_code": "952433",
+        "company_name": "Samaritans",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "MSI-Reproductive-Choices": {
+        "company_code": "516173",
+        "company_name": "MSI-Reproductive-Choices",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "ODI": {
+        "company_code": "323798",
+        "company_name": "ODI",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "RSPB-Royal-Society-for-the-Protection-of-Birds": {
+        "company_code": "642607",
+        "company_name": "RSPB-Royal-Society-for-the-Protection-of-Birds",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Street-Child": {
+        "company_code": "1865775",
+        "company_name": "Street-Child",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "CAFOD": {
+        "company_code": "766171",
+        "company_name": "CAFOD",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Code-Club": {
+        "company_code": "843081",
+        "company_name": "Code-Club",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "World-Animal-Protection": {
+        "company_code": "418885",
+        "company_name": "World-Animal-Protection",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "HelpAge-International": {
+        "company_code": "530998",
+        "company_name": "HelpAge-International",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "CIPD": {
+        "company_code": "768149",
+        "company_name": "CIPD",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Debate-Mate": {
+        "company_code": "928170",
+        "company_name": "Debate-Mate",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Institution-of-Mechanical-Engineers": {
+        "company_code": "794403",
+        "company_name": "Institution-of-Mechanical-Engineers",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Al-Mustafa-Welfare-Trust": {
+        "company_code": "764499",
+        "company_name": "Al-Mustafa-Welfare-Trust",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "The-National-Trust": {
+        "company_code": "37627",
+        "company_name": "The-National-Trust",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Citizens-Advice": {
+        "company_code": "346164",
+        "company_name": "Citizens-Advice",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Sue-Ryder": {
+        "company_code": "763946",
+        "company_name": "Sue-Ryder",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Frontline": {
+        "company_code": "1825940",
+        "company_name": "Frontline",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Sense": {
+        "company_code": "747712",
+        "company_name": "Sense",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "CTC": {
+        "company_code": "621712",
+        "company_name": "CTC",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Ben": {
+        "company_code": "765255",
+        "company_name": "Ben",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Mencap": {
+        "company_code": "37146",
+        "company_name": "Mencap",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Prince-s-Trust": {
+        "company_code": "35861",
+        "company_name": "Prince-s-Trust",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "GLL": {
+        "company_code": "337136",
+        "company_name": "GLL",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Age-UK-The-National-Charity": {
+        "company_code": "412849",
+        "company_name": "Age-UK-The-National-Charity",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Shelter": {
+        "company_code": "1096857",
+        "company_name": "Shelter",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Cancer-Research-UK": {
+        "company_code": "349084",
+        "company_name": "Cancer-Research-UK",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Cats-Protection": {
+        "company_code": "682767",
+        "company_name": "Cats-Protection",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "The-Guide-Dogs-for-the-Blind-Association": {
+        "company_code": "1051490",
+        "company_name": "The-Guide-Dogs-for-the-Blind-Association",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Wellcome-Trust": {
+        "company_code": "11852",
+        "company_name": "Wellcome-Trust",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Givergy": {
+        "company_code": "1415483",
+        "company_name": "Givergy",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "St-Mungo-s": {
+        "company_code": "752484",
+        "company_name": "St-Mungo-s",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Tate": {
+        "company_code": "138935",
+        "company_name": "Tate",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Marie-Curie": {
+        "company_code": "763951",
+        "company_name": "Marie-Curie",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Church-of-England": {
+        "company_code": "510785",
+        "company_name": "Church-of-England",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Orbit-Group": {
+        "company_code": "494602",
+        "company_name": "Orbit-Group",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Police-Now": {
+        "company_code": "1686773",
+        "company_name": "Police-Now",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Centre-for-Effective-Altruism": {
+        "company_code": "771486",
+        "company_name": "Centre-for-Effective-Altruism",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "NCT": {
+        "company_code": "766668",
+        "company_name": "NCT",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "The-Vegan-Society": {
+        "company_code": "912613",
+        "company_name": "The-Vegan-Society",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Institution-of-Civil-Engineers": {
+        "company_code": "614609",
+        "company_name": "Institution-of-Civil-Engineers",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Everyturn-Mental-Health": {
+        "company_code": "2063226",
+        "company_name": "Everyturn-Mental-Health",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Grand-Union-Housing-Group": {
+        "company_code": "2367235",
+        "company_name": "Grand-Union-Housing-Group",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "IFRS-Foundation": {
+        "company_code": "787613",
+        "company_name": "IFRS-Foundation",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Eden-Project": {
+        "company_code": "599395",
+        "company_name": "Eden-Project",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Mission-Services-of-London": {
+        "company_code": "525353",
+        "company_name": "Mission-Services-of-London",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Taff-Housing-Association": {
+        "company_code": "3742567",
+        "company_name": "Taff-Housing-Association",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "A-Rocha": {
+        "company_code": "764211",
+        "company_name": "A-Rocha",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "Alacrity-Foundation": {
+        "company_code": "1391201",
+        "company_name": "Alacrity-Foundation",
+        "Reviews": "No",
+        "Interviews": "No"
+    },
+    "United-Jewish-Israel-Appeal": {
+        "company_code": "582968",
+        "company_name": "United-Jewish-Israel-Appeal",
+        "Reviews": "No",
+        "Interviews": "No"
+    }
+}
