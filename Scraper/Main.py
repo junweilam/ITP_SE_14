@@ -45,9 +45,9 @@ def main():
 
     # interview_worker = GlassDoorInterviewWorker(company_code, company_name, account_number, batch_size)
 
-    # FILE_PATH = os.path.join(".", "Companies", "United_States_Companies.json") # Modify this
-    # interview_worker.start_multiple_scrapes_interview(FILE_PATH) 
-    #interview_worker.start_one_scrape_interview()
+    #FILE_PATH = os.path.join(".", "Companies", "example.json") # Modify this
+    #interview_worker.start_multiple_scrapes_interview(FILE_PATH) 
+    interview_worker.start_one_scrape_interview()
 
 if __name__ == "__main__":
   main()
