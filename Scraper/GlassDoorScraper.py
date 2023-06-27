@@ -23,6 +23,7 @@ GLASSDOOR_WEBSITE = "https://www.glassdoor.sg/index.htm"
 MISCELLANOUS_DIRECTORY = os.path.join(".", "miscellanous")
 DATA_DIRECTORY_REVIEWS = os.path.join("..", "data/Singapore/reviews") #Change to your own country
 DATA_DIRECTORY_INTERVIEWS = os.path.join("..", "data/Singapore/interviews") #Change to your own country
+COUNTRY_FILTER = "Singapore - All Cities" #Here to change country filter. Format is usually [country name] - All Cities
 
 class GlassDoorScraper:
     def __init__(self, driver, company_name, company_code):
@@ -209,17 +210,7 @@ class GlassDoorScraper:
             self._get_reviews_on_page(self)
             print(f"{url}: Failed to load: '//div[@id='ReviewsRef'")
             sys.exit(1)
-        filter_btn = self.driver.find_element(By.XPATH, "//button[@data-test='ContentFiltersFilterToggleBtn']/span[1]")
-        filter_btn.click()
-
-        self.driver.find_element(By.XPATH, "//div[@data-test='ContentFiltersSelectalocationDropdownContent']").click()
-        select_loc = self.driver.find_element(By.XPATH, "//div[@data-test='ContentFiltersSelectalocationDropdownContent']/div[1]/div[1]/div[1]/div[1]/input[1]")
-        sleep(1)
-
-        # Edit this based on countries
-        select_loc.send_keys("Singapore - All Cities")
-
-        select_loc.send_keys(Keys.ENTER)
+        
         # Get the HTML source of the reviews section
         reviews_html = reviews_section.get_attribute("innerHTML")
 
@@ -233,7 +224,25 @@ class GlassDoorScraper:
         review_elements = reviews_feed.find_all("li", class_="empReview")
         return review_elements
 
-    
+    def _filter_review(self):
+        filter_btn = self.driver.find_element(By.XPATH, "//button[@data-test='ContentFiltersFilterToggleBtn']/span[1]")
+        filter_btn.click()
+
+        self.driver.find_element(By.XPATH, "//div[@data-test='ContentFiltersSelectalocationDropdownContent']").click()
+        select_loc = self.driver.find_element(By.XPATH, "//div[@data-test='ContentFiltersSelectalocationDropdownContent']/div[1]/div[1]/div[1]/div[1]/input[1]")
+        sleep(1)
+
+        # Edit this based on countries
+        select_loc.send_keys(COUNTRY_FILTER)
+        sleep(1)
+        select_loc.send_keys(Keys.ENTER)
+        sleep(5)
+
+        try:
+            self.driver.find_element(By.XPATH, "//span[@title='"+COUNTRY_FILTER+"']")
+        except:
+            return False
+        return True
     def checkReviewRating(self,class_name):
         if class_name == "css-1mfncox":
             return 1
