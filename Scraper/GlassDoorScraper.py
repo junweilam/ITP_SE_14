@@ -41,6 +41,7 @@ class GlassDoorScraper:
         self.reviews_collected = []
         self.interviews_collected = []
         self.batch_counter = 0
+        
 
             
     def login_using_facebook(self, account_type):
@@ -70,6 +71,18 @@ class GlassDoorScraper:
         self.driver.switch_to_window(window_handles[0])
         self._is_login_successful()
     
+    #to count the number of reviews in each company and store in json file
+    def generate_reviews_Count(self):
+        """Generates the list of URLs containing reviews"""
+        url = f"https://www.glassdoor.sg/Reviews/{self.company_name}-Reviews-E{self.company_code}.htm"
+        self.driver.navigate_to(url)
+        self._count_pages_to_scrape(self.driver.get_current_url())
+
+        return self.reviews_count
+        
+        
+        
+ #_--------------------------------------------------------------------------   
     def generate_reviews_urls(self):
         """Generates the list of URLs containing reviews"""
         url = f"https://www.glassdoor.sg/Reviews/{self.company_name}-Reviews-E{self.company_code}.htm"

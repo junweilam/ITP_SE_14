@@ -23,15 +23,15 @@ COUNTRY = 'Singapore'
 NGOs = []
 
 # Filter 
-c1 = '&locId=15&locType=N&locName=Argentina&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
-c2 = '&locId=16&locType=N&locName=Australia&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
-c3 = '&locId=18&locType=N&locName=Austria&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
-c4 = '&locId=27&locType=N&locName=Bangladesh&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
+c1 = '&locId=167&locType=N&locName=Oman&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
+c2 = '&locId=177&locType=N&locName=Nigeria&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
+c3 = '&locId=3934727&locType=C&locName=Skopje%20(Republic%20of%20Macedonia)&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
+c4 = '&locId=180&locType=N&locName=Norway&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
 
-grantmaking = '&locId=240&locType=N&locName=Taiwan&industry=200087&filterType=RATING_OVERALL'
-civic = '&locId=240&locType=N&locName=Taiwan&industry=200089&filterType=RATING_OVERALL'
-religious = '&locId=240&locType=N&locName=Taiwan&industry=200088&filterType=RATING_OVERALL'
-culture = '&locId=240&locType=N&locName=Taiwan&industry=200016&filterType=RATING_OVERALL'
+# grantmaking = '&locId=240&locType=N&locName=Taiwan&industry=200087&filterType=RATING_OVERALL'
+# civic = '&locId=240&locType=N&locName=Taiwan&industry=200089&filterType=RATING_OVERALL'
+# religious = '&locId=240&locType=N&locName=Taiwan&industry=200088&filterType=RATING_OVERALL'
+# culture = '&locId=240&locType=N&locName=Taiwan&industry=200016&filterType=RATING_OVERALL'
 
 def logIn():
     driver.get(url_login)
@@ -134,24 +134,26 @@ def scraping_pages(num_pages, filter):
 
 logIn()
 
+location = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
+
 #Scraping Company 1
-scraping_pages(85, c1)
-with open('D:\\CompaniesScraper\\Argentina\\Argentina.json', 'w') as fp:
+scraping_pages(6, c1)
+with open(os.path.join(location,'Oman.json'), 'w') as fp:
     json.dump(NGOs, fp)
 
 #Scraping Company 2
-scraping_pages(228, c2)
-with open('D:\\CompaniesScraper\\Australia\\Australia.json', 'w') as fp:
+scraping_pages(61, c2)
+with open(os.path.join(location,'Nigeria.json'), 'w') as fp:
     json.dump(NGOs, fp)
 
 #Scraping Company 3
-scraping_pages(19, c3)
-with open('D:\\CompaniesScraper\\Austria\\Austria.json', 'w') as fp:
+scraping_pages(2, c3)
+with open(os.path.join(location,'North Macedonia.json'), 'w') as fp:
     json.dump(NGOs, fp)
 
 #Scraping Company 4
-scraping_pages(35, c4)
-with open('D:\\CompaniesScraper\\Bangladesh\\Bangladesh.json', 'w') as fp:
+scraping_pages(7, c4)
+with open(os.path.join(location,'Norway.json'), 'w') as fp:
     json.dump(NGOs, fp)
 
 #Scraping Grantmaking & Charitable Foundations

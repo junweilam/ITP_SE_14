@@ -104,6 +104,27 @@ class GlassDoorReviewWorker:
         print(f"{self.worker.username}: Completed scrape on {self.worker.company_name}")
     
     
+    # def start_multiple_scrapes(self, file_path):
+    #     """Scrapes multiple companies for reviews."""
+    #     # Read json containing company codes and list
+    #     try:
+    #         with open(file_path) as f:
+    #             json_data = json.load(f)
+    #             # Extract code and name
+    #             for company in json_data:
+    #                 company_info = json_data[company]
+    #                 self.company_code = company_info['company_code']
+    #                 self.company_name = company_info['company_name']
+    #                 self.worker.company_code = self.company_code
+    #                 self.worker.company_name = self.company_name
+    #                 self.batch_counter = 0
+    #                 self.start_one_scrape()
+
+    #     except FileNotFoundError:
+    #         print(f"Error: {file_path} provided does not exists. Exiting.")
+    #         print("Please ensure that your are in the scraper directory")
+    #         sys.exit(1)
+    
     def start_multiple_scrapes(self, file_path):
         """Scrapes multiple companies for reviews."""
         # Read json containing company codes and list
@@ -111,20 +132,20 @@ class GlassDoorReviewWorker:
             with open(file_path) as f:
                 json_data = json.load(f)
                 # Extract code and name
-                for company in json_data:
-                    company_info = json_data[company]
-                    self.company_code = company_info['company_code']
-                    self.company_name = company_info['company_name']
-                    self.worker.company_code = self.company_code
-                    self.worker.company_name = self.company_name
-                    self.batch_counter = 0
-                    self.start_one_scrape()
+                for item in json_data:
+                    for company, company_info in item.items():
+                        self.company_code = company_info['company_code']
+                        self.company_name = company_info['company_name']
+                        self.worker.company_code = self.company_code
+                        self.worker.company_name = self.company_name
+                        self.batch_counter = 0
+                        self.start_one_scrape()
 
         except FileNotFoundError:
-            print(f"Error: {file_path} provided does not exists. Exiting.")
-            print("Please ensure that your are in the scraper directory")
+            print(f"Error: {file_path} provided does not exist. Exiting.")
+            print("Please ensure that you are in the scraper directory")
             sys.exit(1)
-        
+
 
      
 
