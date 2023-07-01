@@ -40,20 +40,47 @@ class GlassDoorReviewCounter:
             print(f"Failed to login using {account_type} - Blocked by captcha.")
             sys.exit(1)
         return worker
+    
+    def start_worker(self):
+        """Override this to invoke other types of scrapes e.g., Company information"""
+        start_time = time.time()
+        filterSuccess = self.worker._filter_review()
+        if filterSuccess:
+            while self.list_of_review_pages:
+                url = self.list_of_review_pages.pop(0)
+                try:
+                    review_elements = self.worker._get_reviews_on_page(url)
+                    reviews = self.worker._extract_reviews(review_elements)
+                    self.reviews_collected.append(reviews)
+                    if (len(self.reviews_collected) == self.batch_size) or (len(self.list_of_review_pages) == 0):
+                        self.worker.dump_reviews_json(self.reviews_collected)
+                        self.reviews_collected.clear()
+                        end_time = time.time()
+                        elapsed_time = end_time - start_time # stop timer
+                        print(f"Batch of {self.batch_size} urls scrapped. Time Elapsed: {elapsed_time}")
+                        start_time = end_time # reset timer
+                except Exception as e:
+                    print(f"Failed to scrape: {url} view error_logs for list of failed urls.")
+                    self.worker.dump_scrape_error_log(url)
+        else:
+            print("No filtered comments found. Skipping")
+            end_time = time.time()
+            elapsed_time = end_time - start_time # stop timer
+            start_time = end_time # reset timer
 
     def generate_urls(self):
         """Generates a list of urls to scrape"""
         Counter.append({
                         self.company_name: self.worker.generate_reviews_Count()
-                    }) 
-    
-    # def generate_urls_interview(self):
-    #     """Generates a list of urls to scrape"""
-    #     self.list_of_interview_pages = self.worker.generate_interview_urls()
+                    })
 
+
+    def start_one_scrape(self):
         """ Scrape one company for reviews """
         self.generate_urls()
         print(f"getting Review Count for {self.company_name}...")
+        self.start_worker()
+        print(f"{self.worker.username}: Completed scrape on {self.worker.company_name}")
     
     def start_multiple_scrapes(self, file_path):
         """Scrapes multiple companies for reviews."""
@@ -71,10 +98,16 @@ class GlassDoorReviewCounter:
                         self.batch_counter = 0
                         self.start_one_scrape()
 
-            location = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
-            with open(os.path.join(location,"Review_Counts",COUNTRY+'.json'), 'w') as fp:
-                json.dump(Counter, fp)
+                location = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
+                directory_path = os.path.join(location, "Review_Counts")
+                if not os.path.exists(directory_path):
+                    os.makedirs(directory_path)
+
+                file_path = os.path.join(directory_path, COUNTRY + '.json')
+                with open(file_path, 'w') as fp:
+                    json.dump(Counter, fp)
+
 
         except FileNotFoundError:
             print(f"Error: {file_path} provided does not exist. Exiting.")
