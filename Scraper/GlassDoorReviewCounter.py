@@ -44,16 +44,13 @@ class GlassDoorReviewCounter:
     def generate_urls(self):
         """Generates a list of urls to scrape"""
         Counter.append({
-                        self.company_name:{
-                            "Review Count": self.worker.generate_reviews_Count(),
-                        }
+                        self.company_name: self.worker.generate_reviews_Count()
                     }) 
     
     # def generate_urls_interview(self):
     #     """Generates a list of urls to scrape"""
     #     self.list_of_interview_pages = self.worker.generate_interview_urls()
 
-    def start_one_scrape(self):
         """ Scrape one company for reviews """
         self.generate_urls()
         print(f"getting Review Count for {self.company_name}...")
@@ -76,7 +73,7 @@ class GlassDoorReviewCounter:
 
             location = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
-            with open(os.path.join(location,COUNTRY+'.json'), 'w') as fp:
+            with open(os.path.join(location,"Review_Counts",COUNTRY+'.json'), 'w') as fp:
                 json.dump(Counter, fp)
 
         except FileNotFoundError:

@@ -24,6 +24,7 @@ MISCELLANOUS_DIRECTORY = os.path.join(".", "miscellanous")
 DATA_DIRECTORY_REVIEWS = os.path.join("..", "data/Singapore/reviews") #Change to your own country
 DATA_DIRECTORY_INTERVIEWS = os.path.join("..", "data/Singapore/interviews") #Change to your own country
 COUNTRY_FILTER = "Singapore - All Cities" #Here to change country filter. Format is usually [country name] - All Cities
+COUNTRY = "Singapore" #CHANGE THIS TO THE COUNTRY YOU WANT TO FILTER
 
 class GlassDoorScraper:
     def __init__(self, driver, company_name, company_code):
@@ -71,10 +72,10 @@ class GlassDoorScraper:
         self.driver.switch_to_window(window_handles[0])
         self._is_login_successful()
     
-    #to count the number of reviews in each company and store in json file
+    #to count the number of reviews in each company and store in json file(CHANGE THIS)
     def generate_reviews_Count(self):
         """Generates the list of URLs containing reviews"""
-        url = f"https://www.glassdoor.sg/Reviews/{self.company_name}-Reviews-E{self.company_code}.htm"
+        url = f"https://www.glassdoor.sg/Reviews/{self.company_name}-{COUNTRY}-Reviews-EI_IE{self.company_code}.0,4_IL.5,14_IN217.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME"
         self.driver.navigate_to(url)
         self._count_pages_to_scrape(self.driver.get_current_url())
 

@@ -23,10 +23,12 @@ COUNTRY = 'Singapore'
 NGOs = []
 
 # Filter 
-c1 = '&locId=167&locType=N&locName=Oman&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
-c2 = '&locId=177&locType=N&locName=Nigeria&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
-c3 = '&locId=3934727&locType=C&locName=Skopje%20(Republic%20of%20Macedonia)&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
-c4 = '&locId=180&locType=N&locName=Norway&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
+c1 = '&locId=125&locType=N&locName=Jamaica&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
+c2 = '&locId=123&locType=N&locName=Japan&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
+c3 = '&locId=127&locType=N&locName=Jordan&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
+#c4 = '&locId=166&locType=N&locName=Malta&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
+c5 = '&locId=169&locType=N&locName=Mexico&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
+c6 = '&locId=162&locType=N&locName=Morocco&industry=200016,200018,200044,200045,200059,200087,200088,200089&filterType=RATING_OVERALL'
 
 # grantmaking = '&locId=240&locType=N&locName=Taiwan&industry=200087&filterType=RATING_OVERALL'
 # civic = '&locId=240&locType=N&locName=Taiwan&industry=200089&filterType=RATING_OVERALL'
@@ -137,23 +139,33 @@ logIn()
 location = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
 #Scraping Company 1
-scraping_pages(6, c1)
-with open(os.path.join(location,'Oman.json'), 'w') as fp:
+scraping_pages(7, c1)
+with open(os.path.join(location,'Jamaica.json'), 'w') as fp:
     json.dump(NGOs, fp)
 
 #Scraping Company 2
-scraping_pages(61, c2)
-with open(os.path.join(location,'Nigeria.json'), 'w') as fp:
+scraping_pages(38, c2)
+with open(os.path.join(location,'Japan.json'), 'w') as fp:
     json.dump(NGOs, fp)
 
 #Scraping Company 3
-scraping_pages(2, c3)
-with open(os.path.join(location,'North Macedonia.json'), 'w') as fp:
+scraping_pages(13, c3)
+with open(os.path.join(location,'Jordan.json'), 'w') as fp:
     json.dump(NGOs, fp)
 
-#Scraping Company 4
-scraping_pages(7, c4)
-with open(os.path.join(location,'Norway.json'), 'w') as fp:
+# #Scraping Company 4
+# scraping_pages(3, c4)
+# with open(os.path.join(location,'Malta.json'), 'w') as fp:
+#     json.dump(NGOs, fp)
+
+#Scraping Company 5
+scraping_pages(113, c5)
+with open(os.path.join(location,'Mexico.json'), 'w') as fp:
+    json.dump(NGOs, fp)
+
+#Scraping Company 6
+scraping_pages(13, c6)
+with open(os.path.join(location,'Morocco.json'), 'w') as fp:
     json.dump(NGOs, fp)
 
 #Scraping Grantmaking & Charitable Foundations
