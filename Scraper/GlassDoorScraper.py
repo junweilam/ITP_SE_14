@@ -88,14 +88,36 @@ class GlassDoorScraper:
         """Generates the list of URLs containing reviews"""
         url = f"https://www.glassdoor.sg/Reviews/{self.company_name}-Reviews-E{self.company_code}.htm"
         self.driver.navigate_to(url)
-        self._count_pages_to_scrape(self.driver.get_current_url())
-        self.list_of_review_pages.append(url)
 
-        for page_num in range(2, self.number_of_review_pages):
-            url = f"https://www.glassdoor.sg/Reviews/{self.company_name}-Reviews-E{self.company_code}_P{page_num}.htm?filter.iso3Language=eng"
-            self.list_of_review_pages.append(url)
+        #-----------------------FILTER THE COUNTRY PORTION---------------------------------------
+        #filters the country
+        filter_btn = self.driver.find_element(By.XPATH, "//button[@data-test='ContentFiltersFilterToggleBtn']/span[1]")
+        filter_btn.click()
 
-        return self.list_of_review_pages
+        self.driver.find_element(By.XPATH, "//div[@data-test='ContentFiltersSelectalocationDropdownContent']").click()
+        select_loc = self.driver.find_element(By.XPATH, "//div[@data-test='ContentFiltersSelectalocationDropdownContent']/div[1]/div[1]/div[1]/div[1]/input[1]")
+        sleep(1)
+
+        # Edit this based on countries
+        select_loc.send_keys(COUNTRY_FILTER)
+        sleep(1)
+        select_loc.send_keys(Keys.ENTER)
+        sleep(5)
+
+        try:
+            self.driver.find_element(By.XPATH, "//span[@title='"+COUNTRY_FILTER+"']")
+            self._count_pages_to_scrape(self.driver.get_current_url())
+            self.list_of_review_pages.append(self.driver.get_current_url())
+            urlString = self.driver.get_current_url().split(".htm?")
+            
+            for page_num in range(2, self.number_of_review_pages):
+                url = urlString[0] + f"_IP{page_num}.htm?" + urlString[1]
+                self.list_of_review_pages.append(url)
+
+            return self.list_of_review_pages
+        #if unable to find filter, return empty list (meaning nothing to find)
+        except:
+            return self.list_of_review_pages
     
     def generate_interview_urls(self):
         """Generates the list of URLs containing interviews"""
@@ -238,25 +260,6 @@ class GlassDoorScraper:
         review_elements = reviews_feed.find_all("li", class_="empReview")
         return review_elements
 
-    def _filter_review(self):
-        filter_btn = self.driver.find_element(By.XPATH, "//button[@data-test='ContentFiltersFilterToggleBtn']/span[1]")
-        filter_btn.click()
-
-        self.driver.find_element(By.XPATH, "//div[@data-test='ContentFiltersSelectalocationDropdownContent']").click()
-        select_loc = self.driver.find_element(By.XPATH, "//div[@data-test='ContentFiltersSelectalocationDropdownContent']/div[1]/div[1]/div[1]/div[1]/input[1]")
-        sleep(1)
-
-        # Edit this based on countries
-        select_loc.send_keys(COUNTRY_FILTER)
-        sleep(1)
-        select_loc.send_keys(Keys.ENTER)
-        sleep(5)
-
-        try:
-            self.driver.find_element(By.XPATH, "//span[@title='"+COUNTRY_FILTER+"']")
-        except:
-            return False
-        return True
     def checkReviewRating(self,class_name):
         if class_name == "css-1mfncox":
             return 1
