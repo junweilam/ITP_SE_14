@@ -123,14 +123,36 @@ class GlassDoorScraper:
         """Generates the list of URLs containing interviews"""
         url = f"https://www.glassdoor.sg/Interview/{self.company_name}-Interview-Questions-E{self.company_code}.htm"
         self.driver.navigate_to(url)
-        self._count_pages_to_scrape_interview(self.driver.get_current_url())
-        self.list_of_interview_pages.append(url)
+        
+        #-----------------------FILTER THE COUNTRY PORTION---------------------------------------
+        #filters the country
+        filter_btn = self.driver.find_element(By.XPATH, "//button[@data-test='ContentFiltersFilterToggleBtn']/span[1]")
+        filter_btn.click()
 
-        for page_num in range(2, self.number_of_interview_pages):
-            url = f"https://www.glassdoor.sg/Interview/{self.company_name}-Interview-Questions-E{self.company_code}_P{page_num}.htm"
-            self.list_of_interview_pages.append(url)
+        self.driver.find_element(By.XPATH, "//div[@data-test='ContentFiltersSelectalocationDropdownContent']").click()
+        select_loc = self.driver.find_element(By.XPATH, "//div[@data-test='ContentFiltersSelectalocationDropdownContent']/div[1]/div[1]/div[1]/div[1]/input[1]")
+        sleep(1)
 
-        return self.list_of_interview_pages
+        # Edit this based on countries
+        select_loc.send_keys(COUNTRY_FILTER)
+        sleep(1)
+        select_loc.send_keys(Keys.ENTER)
+        sleep(5)
+
+        try:
+            self.driver.find_element(By.XPATH, "//span[@title='"+COUNTRY_FILTER+"']")
+            self._count_pages_to_scrape_interview(self.driver.get_current_url())
+            self.list_of_interview_pages.append(self.driver.get_current_url())
+            urlString = self.driver.get_current_url().split(".htm")
+
+            for page_num in range(2, self.number_of_interview_pages):
+                url = urlString[0] + f"_IP{page_num}.htm"
+                self.list_of_interview_pages.append(url)
+
+            return self.list_of_interview_pages
+        except:
+            #if unable to find filter, return empty list (meaning nothing to find)
+            return self.list_of_interview_pages
 
     def _set_credentials(self, account_type):
         # Load JSON data from file
