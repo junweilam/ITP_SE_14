@@ -40,29 +40,22 @@ class GlassDoorInterviewWorker:
     def start_worker_interview(self):
         """Override this to invoke other types of scrapes e.g., Company information"""
         start_time = time.time()
-        filterSuccess = self.worker._filter_review()
-        if filterSuccess:
-            while self.list_of_interview_pages:
-                url = self.list_of_interview_pages.pop(0)
-                try:
-                    interview_elements = self.worker._get_interviews_on_page(url)
-                    interview = self.worker._extract_interviews(interview_elements)
-                    self.interviews_collected.append(interview)
-                    if (len(self.interviews_collected) == self.batch_size) or (len(self.list_of_interview_pages) == 0):
-                        self.worker.dump_interviews_json(self.interviews_collected)
-                        self.interviews_collected.clear()
-                        end_time = time.time()
-                        elapsed_time = end_time - start_time # stop timer
-                        print(f"Batch of {self.batch_size} urls scrapped. Time Elapsed: {elapsed_time}")
-                        start_time = end_time # reset timer
-                except Exception as e:
-                    print(f"Failed to scrape: {url} view error_logs for list of failed urls.")
-                    self.worker.dump_scrape_error_log(url)
-        else:
-            print("No filtered comments found. Skipping")
-            end_time = time.time()
-            elapsed_time = end_time - start_time # stop timer
-            start_time = end_time # reset timer
+        while self.list_of_interview_pages:
+            url = self.list_of_interview_pages.pop(0)
+            try:
+                interview_elements = self.worker._get_interviews_on_page(url)
+                interview = self.worker._extract_interviews(interview_elements)
+                self.interviews_collected.append(interview)
+                if (len(self.interviews_collected) == self.batch_size) or (len(self.list_of_interview_pages) == 0):
+                    self.worker.dump_interviews_json(self.interviews_collected)
+                    self.interviews_collected.clear()
+                    end_time = time.time()
+                    elapsed_time = end_time - start_time # stop timer
+                    print(f"Batch of {self.batch_size} urls scrapped. Time Elapsed: {elapsed_time}")
+                    start_time = end_time # reset timer
+            except Exception as e:
+                print(f"Failed to scrape: {url} view error_logs for list of failed urls.")
+                self.worker.dump_scrape_error_log(url)
             
     def resume_work(self):
         """For jobs that were prematurely terminated, can invoke this to resume scraping 
