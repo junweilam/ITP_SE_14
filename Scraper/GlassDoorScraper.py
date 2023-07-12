@@ -19,12 +19,12 @@ import multiprocessing
 import sys 
 from time import sleep
 
-GLASSDOOR_WEBSITE = "https://www.glassdoor.sg/index.htm"
+GLASSDOOR_WEBSITE = "https://www.glassdoor.sg/"
 MISCELLANOUS_DIRECTORY = os.path.join(".", "miscellanous")
-DATA_DIRECTORY_REVIEWS = os.path.join("..", "data/Singapore/reviews") #Change to your own country
-DATA_DIRECTORY_INTERVIEWS = os.path.join("..", "data/Singapore/interviews") #Change to your own country
-COUNTRY_FILTER = "Singapore - All Cities" #Here to change country filter. Format is usually [country name] - All Cities
-COUNTRY = "Singapore" #CHANGE THIS TO THE COUNTRY YOU WANT TO FILTER
+DATA_DIRECTORY_REVIEWS = os.path.join("..", "data/US/reviews") #Change to your own country
+DATA_DIRECTORY_INTERVIEWS = os.path.join("..", "data/US/interviews") #Change to your own country
+COUNTRY_FILTER = "United States - All Cities" #Here to change country filter. Format is usually [country name] - All Cities
+COUNTRY = "United-States" #CHANGE THIS TO THE COUNTRY YOU WANT TO FILTER
 
 class GlassDoorScraper:
     def __init__(self, driver, company_name, company_code):
@@ -42,14 +42,32 @@ class GlassDoorScraper:
         self.reviews_collected = []
         self.interviews_collected = []
         self.batch_counter = 0
-        
+
+    def logIn(self, account_type):
+        try:
+            self._set_credentials(account_type)
+            self.identifier = account_type
+            email_field = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, 'inlineUserEmail')))
+            button = WebDriverWait(self.driver,10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="InlineLoginModule"]/div/div[1]/div/div/div/div/form/div[2]/button')))
+            email_field.send_keys(self.username)
+            button.click()
+            password_field = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, 'inlineUserPassword')))
+            password_field.send_keys(self.password)
+            sign_in = WebDriverWait(self.driver,10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="InlineLoginModule"]/div/div[1]/div/div/div/div/form/div[2]/button')))
+            sign_in.click()
+        except TimeoutException:
+            print("Failed to find email, password")
+
+    def login_using_google(self, account_type):
+        self._set_credentials(account_type)
+        self.identifier = account_type
 
             
     def login_using_facebook(self, account_type):
         self._set_credentials(account_type)
         self.identifier = account_type
         # Log in to Glassdoor via facebook 
-        facebook_login_button = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//button[@data-test='facebookBtn']")))
+        facebook_login_button = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="InlineLoginModule"]/div/div[1]/div/div/div/div/div[1]/div/div/button')))
         facebook_login_button.click()
 
         # Switch to the pop-up window
@@ -57,13 +75,16 @@ class GlassDoorScraper:
         self.driver.switch_to_window(window_handles[1])
         try:
             # Type in email and password
-            email_field = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, "//input[@id='email']")))
+            email_field = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="identifierId"]')))
             email_field.send_keys(self.username)
-            
-            password_field = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, '//input[@id="pass"]')))
+
+            next_button = WebDriverWait(self.driver,10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="identifierNext"]/div/button')))
+            next_button.click()
+
+            password_field = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, '//*[@id="password"]/div[1]/div/div[1]/input')))
             password_field.send_keys(self.password)
             
-            login_button = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH,'//*[@id="loginbutton"]')))
+            login_button = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH,'//*[@id="passwordNext"]/div/button')))
             login_button.click()    
         except TimeoutException:
             print("Failed to find email, password or login button for facebook login")

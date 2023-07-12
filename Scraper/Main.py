@@ -25,7 +25,7 @@ def main():
 
 
     # Will be resolved to Facebook_{account_number} in accounts.json. 
-    account_number = 2
+    account_number = 1
 
     # will scrape 100 urls (1000 reviews) before dumping results to json
     batch_size = 100 
@@ -40,14 +40,14 @@ def main():
     # review_worker.resume_scrape()
 
     """Uncomment if you want to scrape multiple companies. (Provide this json file in FILE_PATH)"""
-    FILE_PATH = os.path.join(".", "Companies", "Singapore.json") # Modify this
+    FILE_PATH = os.path.join(".", "Companies", "United States College.json") # Modify this
     review_worker.start_multiple_scrapes(FILE_PATH) 
 
     # interview_worker = GlassDoorInterviewWorker(company_code, company_name, account_number, batch_size)
 
-    #FILE_PATH = os.path.join(".", "Companies", "example.json") # Modify this
-    #interview_worker.start_multiple_scrapes_interview(FILE_PATH) 
-    #interview_worker.start_one_scrape_interview()
+    # FILE_PATH = os.path.join(".", "Companies", "Singapore.json") # Modify this
+    # interview_worker.start_multiple_scrapes_interview(FILE_PATH) 
+    # interview_worker.start_one_scrape_interview()
 
 if __name__ == "__main__":
   main()

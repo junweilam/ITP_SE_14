@@ -99,14 +99,15 @@ class GlassDoorInterviewWorker:
             with open(file_path) as f:
                 json_data = json.load(f)
                 # Extract code and name
-                for company in json_data:
-                    company_info = json_data[company]
-                    self.company_code = company_info['company_code']
-                    self.company_name = company_info['company_name']
-                    self.worker.company_code = self.company_code
-                    self.worker.company_name = self.company_name
-                    self.batch_counter = 0
-                    self.start_one_scrape_interview()
+                for item in json_data:
+                    for company, company_info in item.items():
+                        # company_info = json_data[company]
+                        self.company_code = company_info['company_code']
+                        self.company_name = company_info['company_name']
+                        self.worker.company_code = self.company_code
+                        self.worker.company_name = self.company_name
+                        self.batch_counter = 0
+                        self.start_one_scrape_interview()
 
         except FileNotFoundError:
             print(f"Error: {file_path} provided does not exists. Exiting.")

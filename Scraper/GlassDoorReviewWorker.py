@@ -30,10 +30,13 @@ class GlassDoorReviewWorker:
 
     def create_worker(self):
         """Creates 1 worker, that will be used to scrape glassdoor"""
-        account_type = f"Facebook_{self.account_number}"
+        account_type = f"Glassdoor_{self.account_number}"
         try:
             worker = GlassDoorScraper(driver=ChromeWebDriver(), company_code=self.company_code, company_name=self.company_name)
-            worker.login_using_facebook(account_type=account_type)
+            # worker.login_using_facebook(account_type=account_type)
+            worker.logIn(account_type=account_type)
+            time.sleep(5)
+
         except InvalidSessionIdException:
             print(f"Failed to login using {account_type} - Blocked by captcha.")
             sys.exit(1)
@@ -57,7 +60,7 @@ class GlassDoorReviewWorker:
                     start_time = end_time # reset timer
             except Exception as e:
                 print(f"Failed to scrape: {url} view error_logs for list of failed urls.")
-                self.worker.dump_scrape_error_log(url)
+                #self.worker.dump_scrape_error_log(url)
     
     def resume_work(self):
         """For jobs that were prematurely terminated, can invoke this to resume scraping 
@@ -84,6 +87,7 @@ class GlassDoorReviewWorker:
     def start_one_scrape(self):
         """ Scrape one company for reviews """
         self.generate_urls()
+        time.sleep(3)
         print(f"Starting to scrape {self.company_name} in batches of {self.batch_size} urls.")
         self.start_worker()
         print(f"{self.worker.username}: Completed scrape on {self.worker.company_name}")

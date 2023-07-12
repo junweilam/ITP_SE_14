@@ -32,10 +32,11 @@ class GlassDoorReviewCounter:
 
     def create_worker(self):
         """Creates 1 worker, that will be used to scrape glassdoor"""
-        account_type = f"Facebook_{self.account_number}"
+        account_type = f"Glassdoor_{self.account_number}"
         try:
             worker = GlassDoorScraper(driver=ChromeWebDriver(), company_code=self.company_code, company_name=self.company_name)
-            worker.login_using_facebook(account_type=account_type)
+            # worker.login_using_facebook(account_type=account_type)
+            worker.logIn(account_type=account_type)
         except InvalidSessionIdException:
             print(f"Failed to login using {account_type} - Blocked by captcha.")
             sys.exit(1)
