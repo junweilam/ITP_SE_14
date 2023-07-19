@@ -67,7 +67,7 @@ class GlassDoorScraper:
         self._set_credentials(account_type)
         self.identifier = account_type
         # Log in to Glassdoor via facebook 
-        facebook_login_button = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="InlineLoginModule"]/div/div[1]/div/div/div/div/div[1]/div/div/button')))
+        facebook_login_button = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="InlineLoginModule"]/div/div[1]/div/div/div/div/div[1]/div/div/div/button')))
         facebook_login_button.click()
 
         # Switch to the pop-up window
