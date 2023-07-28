@@ -1,0 +1,74 @@
+[
+  {
+    "UNICEF": {
+      "company_code": "16869",
+      "company_name": "UNICEF",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "RIT (Rochester Institute of Technology)": {
+      "company_code": "23545",
+      "company_name": "RIT (Rochester Institute of Technology)",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "AIESEC": {
+      "company_code": "463422",
+      "company_name": "AIESEC",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Stanford University": {
+      "company_code": "2989",
+      "company_name": "Stanford University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Harvard University": {
+      "company_code": "2817",
+      "company_name": "Harvard University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "World Wildlife Fund": {
+      "company_code": "16152",
+      "company_name": "World Wildlife Fund",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "UNHCR": {
+      "company_code": "336803",
+      "company_name": "UNHCR",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "International Committee of the Red Cross": {
+      "company_code": "320386",
+      "company_name": "International Committee of the Red Cross",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "World Health Organization": {
+      "company_code": "11724",
+      "company_name": "World Health Organization",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  }
+]

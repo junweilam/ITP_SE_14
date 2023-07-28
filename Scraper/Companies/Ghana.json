@@ -1,0 +1,546 @@
+[
+    {
+        "British Council": {
+            "company_code": "117008",
+            "company_name": "British Council",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "YMCA": {
+            "company_code": "3046",
+            "company_name": "YMCA",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "YMCA": {
+            "company_code": "3046",
+            "company_name": "YMCA",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Ghana": {
+            "company_code": "785515",
+            "company_name": "University of Ghana",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "The Church of Jesus Christ of Latter-day Saints": {
+            "company_code": "122747",
+            "company_name": "The Church of Jesus Christ of Latter-day Saints",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNICEF": {
+            "company_code": "16869",
+            "company_name": "UNICEF",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Compassion International": {
+            "company_code": "246796",
+            "company_name": "Compassion International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "AIESEC": {
+            "company_code": "463422",
+            "company_name": "AIESEC",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Stanford University": {
+            "company_code": "2989",
+            "company_name": "Stanford University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Sanford Health": {
+            "company_code": "20495",
+            "company_name": "Sanford Health",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Northside Hospital": {
+            "company_code": "20642",
+            "company_name": "Northside Hospital",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Catholic Relief Services": {
+            "company_code": "135790",
+            "company_name": "Catholic Relief Services",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "The Johns Hopkins University": {
+            "company_code": "2851",
+            "company_name": "The Johns Hopkins University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Henry Ford Health": {
+            "company_code": "4660",
+            "company_name": "Henry Ford Health",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Michigan": {
+            "company_code": "3023",
+            "company_name": "University of Michigan",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNFPA": {
+            "company_code": "350947",
+            "company_name": "UNFPA",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Columbia University": {
+            "company_code": "2748",
+            "company_name": "Columbia University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Innovations for Poverty Action": {
+            "company_code": "432770",
+            "company_name": "Innovations for Poverty Action",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Plan International": {
+            "company_code": "350737",
+            "company_name": "Plan International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "One Acre Fund": {
+            "company_code": "319345",
+            "company_name": "One Acre Fund",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Yale University": {
+            "company_code": "3045",
+            "company_name": "Yale University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "FHI 360": {
+            "company_code": "424981",
+            "company_name": "FHI 360",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Population Services International": {
+            "company_code": "17026",
+            "company_name": "Population Services International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNHCR": {
+            "company_code": "336803",
+            "company_name": "UNHCR",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "SOS Children's Villages International": {
+            "company_code": "778278",
+            "company_name": "SOS Children's Villages International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Actionaid": {
+            "company_code": "339471",
+            "company_name": "Actionaid",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "City Year": {
+            "company_code": "147224",
+            "company_name": "City Year",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "World Wildlife Fund": {
+            "company_code": "16152",
+            "company_name": "World Wildlife Fund",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "MSI Reproductive Choices": {
+            "company_code": "516173",
+            "company_name": "MSI Reproductive Choices",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Nottingham": {
+            "company_code": "35827",
+            "company_name": "University of Nottingham",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "World Food Programme": {
+            "company_code": "328056",
+            "company_name": "World Food Programme",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "International Justice Mission": {
+            "company_code": "134394",
+            "company_name": "International Justice Mission",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Oxfam": {
+            "company_code": "35565",
+            "company_name": "Oxfam",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Jhpiego": {
+            "company_code": "248055",
+            "company_name": "Jhpiego",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Boston Medical Center": {
+            "company_code": "18220",
+            "company_name": "Boston Medical Center",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Methodist Health System": {
+            "company_code": "385412",
+            "company_name": "Methodist Health System",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "World Health Organization": {
+            "company_code": "11724",
+            "company_name": "World Health Organization",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "GPHA": {
+            "company_code": "612548",
+            "company_name": "GPHA",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Mississippi State University": {
+            "company_code": "23922",
+            "company_name": "Mississippi State University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "LSE": {
+            "company_code": "35317",
+            "company_name": "LSE",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "CARE International": {
+            "company_code": "1258306",
+            "company_name": "CARE International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "VSO": {
+            "company_code": "592923",
+            "company_name": "VSO",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Webster University": {
+            "company_code": "23442",
+            "company_name": "Webster University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "ACDI/VOCA": {
+            "company_code": "216846",
+            "company_name": "ACDI/VOCA",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Hong Kong Polytechnic": {
+            "company_code": "41274",
+            "company_name": "Hong Kong Polytechnic",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Bromford": {
+            "company_code": "750892",
+            "company_name": "Bromford",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Accra": {
+            "company_code": "837111",
+            "company_name": "Accra",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "J-PAL": {
+            "company_code": "329669",
+            "company_name": "J-PAL",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "PATH": {
+            "company_code": "144297",
+            "company_name": "PATH",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Mercy Corps": {
+            "company_code": "32140",
+            "company_name": "Mercy Corps",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Twente": {
+            "company_code": "320105",
+            "company_name": "University of Twente",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "SNV Netherlands Development Organisation": {
+            "company_code": "628129",
+            "company_name": "SNV Netherlands Development Organisation",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Right to Play": {
+            "company_code": "565823",
+            "company_name": "Right to Play",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "WaterAid": {
+            "company_code": "582352",
+            "company_name": "WaterAid",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Opportunity International": {
+            "company_code": "269359",
+            "company_name": "Opportunity International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Mastercard Foundation": {
+            "company_code": "722467",
+            "company_name": "Mastercard Foundation",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Emmaus Homes, Inc.": {
+            "company_code": "213915",
+            "company_name": "Emmaus Homes, Inc.",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Global Communities": {
+            "company_code": "150253",
+            "company_name": "Global Communities",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Wellnest": {
+            "company_code": "715579",
+            "company_name": "Wellnest",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Global Brigades": {
+            "company_code": "521611",
+            "company_name": "Global Brigades",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "GS1 Global Office": {
+            "company_code": "785326",
+            "company_name": "GS1 Global Office",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Norwich University": {
+            "company_code": "30161",
+            "company_name": "Norwich University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "VisionFund International": {
+            "company_code": "1110849",
+            "company_name": "VisionFund International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "MEDA": {
+            "company_code": "265614",
+            "company_name": "MEDA",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Amara": {
+            "company_code": "685896",
+            "company_name": "Amara",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "GrowthAfrica": {
+            "company_code": "1909269",
+            "company_name": "GrowthAfrica",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "All Nations University College": {
+            "company_code": "852734",
+            "company_name": "All Nations University College",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Global Media Foundation": {
+            "company_code": "776645",
+            "company_name": "Global Media Foundation",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    }
+]

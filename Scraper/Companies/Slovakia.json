@@ -1,0 +1,74 @@
+[
+    {
+        "Habitat for Humanity": {
+            "company_code": "5810",
+            "company_name": "Habitat for Humanity",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNICEF": {
+            "company_code": "16869",
+            "company_name": "UNICEF",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "British Council": {
+            "company_code": "117008",
+            "company_name": "British Council",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "AIESEC": {
+            "company_code": "463422",
+            "company_name": "AIESEC",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Open Society Foundations": {
+            "company_code": "667335",
+            "company_name": "Open Society Foundations",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen": {
+            "company_code": "523526",
+            "company_name": "Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Assuaged Foundation": {
+            "company_code": "3388193",
+            "company_name": "Assuaged Foundation",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Transparency International": {
+            "company_code": "139150",
+            "company_name": "Transparency International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "On Lok": {
+            "company_code": "260841",
+            "company_name": "On Lok",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    }
+]

@@ -1,0 +1,346 @@
+[
+  {
+    "British Council": {
+      "company_code": "117008",
+      "company_name": "British Council",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "UNICEF": {
+      "company_code": "16869",
+      "company_name": "UNICEF",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "International Committee of the Red Cross": {
+      "company_code": "320386",
+      "company_name": "International Committee of the Red Cross",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "AIESEC": {
+      "company_code": "463422",
+      "company_name": "AIESEC",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Danish Refugee Council": {
+      "company_code": "547080",
+      "company_name": "Danish Refugee Council",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "University of Toronto": {
+      "company_code": "31043",
+      "company_name": "University of Toronto",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "National Democratic Institute": {
+      "company_code": "150117",
+      "company_name": "National Democratic Institute",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "University of Michigan": {
+      "company_code": "3023",
+      "company_name": "University of Michigan",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "M\u00e9decins Sans Fronti\u00e8res": {
+      "company_code": "574190",
+      "company_name": "M\u00e9decins Sans Fronti\u00e8res",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Acted": {
+      "company_code": "556700",
+      "company_name": "Acted",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "The Church of Jesus Christ of Latter-day Saints": {
+      "company_code": "122747",
+      "company_name": "The Church of Jesus Christ of Latter-day Saints",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "MIT": {
+      "company_code": "2889",
+      "company_name": "MIT",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "UNHCR": {
+      "company_code": "336803",
+      "company_name": "UNHCR",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "National University of Singapore": {
+      "company_code": "222778",
+      "company_name": "National University of Singapore",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "ETH Zurich": {
+      "company_code": "119151",
+      "company_name": "ETH Zurich",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Save the Children": {
+      "company_code": "16936",
+      "company_name": "Save the Children",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Mercy Corps": {
+      "company_code": "32140",
+      "company_name": "Mercy Corps",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Educational Testing Service": {
+      "company_code": "7263",
+      "company_name": "Educational Testing Service",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Ann & Robert H. Lurie Children's Hospital of Chicago": {
+      "company_code": "17140",
+      "company_name": "Ann & Robert H. Lurie Children's Hospital of Chicago",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Ann & Robert H. Lurie Children's Hospital of Chicago": {
+      "company_code": "17140",
+      "company_name": "Ann & Robert H. Lurie Children's Hospital of Chicago",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "World Food Programme": {
+      "company_code": "328056",
+      "company_name": "World Food Programme",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "World Food Programme": {
+      "company_code": "328056",
+      "company_name": "World Food Programme",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Amnesty International": {
+      "company_code": "14709",
+      "company_name": "Amnesty International",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Amnesty International": {
+      "company_code": "14709",
+      "company_name": "Amnesty International",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "PATH": {
+      "company_code": "144297",
+      "company_name": "PATH",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "UNFPA": {
+      "company_code": "350947",
+      "company_name": "UNFPA",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Technische Universit\u00e4t Dresden": {
+      "company_code": "158129",
+      "company_name": "Technische Universit\u00e4t Dresden",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Canadian Red Cross": {
+      "company_code": "682841",
+      "company_name": "Canadian Red Cross",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Canadian Red Cross": {
+      "company_code": "682841",
+      "company_name": "Canadian Red Cross",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Vassar College": {
+      "company_code": "21101",
+      "company_name": "Vassar College",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Global Communities": {
+      "company_code": "150253",
+      "company_name": "Global Communities",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "V.N. Karazin Kharkiv National University": {
+      "company_code": "456123",
+      "company_name": "V.N. Karazin Kharkiv National University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "The HALO Trust": {
+      "company_code": "762349",
+      "company_name": "The HALO Trust",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Goethe-Institut": {
+      "company_code": "308489",
+      "company_name": "Goethe-Institut",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Pact (Washington DC)": {
+      "company_code": "495824",
+      "company_name": "Pact (Washington DC)",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Transparency International": {
+      "company_code": "139150",
+      "company_name": "Transparency International",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Kyiv Polytechnic Institute": {
+      "company_code": "763092",
+      "company_name": "Kyiv Polytechnic Institute",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Terre des hommes": {
+      "company_code": "686056",
+      "company_name": "Terre des hommes",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Premi\u00e8re Urgence Internationale": {
+      "company_code": "2122662",
+      "company_name": "Premi\u00e8re Urgence Internationale",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Human Rights Foundation": {
+      "company_code": "439559",
+      "company_name": "Human Rights Foundation",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "United Nation Global Compact": {
+      "company_code": "515999",
+      "company_name": "United Nation Global Compact",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "VGS": {
+      "company_code": "331979",
+      "company_name": "VGS",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Develop": {
+      "company_code": "376826",
+      "company_name": "Develop",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  }
+]

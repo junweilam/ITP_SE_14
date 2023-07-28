@@ -1,0 +1,562 @@
+[
+    {
+        "Massachusetts General Hospital": {
+            "company_code": "20189",
+            "company_name": "Massachusetts General Hospital",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Teach For India": {
+            "company_code": "306891",
+            "company_name": "Teach For India",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Moffitt Cancer Center": {
+            "company_code": "40232",
+            "company_name": "Moffitt Cancer Center",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Children's Hospital Colorado": {
+            "company_code": "18618",
+            "company_name": "Children's Hospital Colorado",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Lehigh University": {
+            "company_code": "21690",
+            "company_name": "Lehigh University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Lehigh University": {
+            "company_code": "21690",
+            "company_name": "Lehigh University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Nebraska": {
+            "company_code": "3024",
+            "company_name": "University of Nebraska",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Novant Health New Hanover Regional Medical Center": {
+            "company_code": "366528",
+            "company_name": "Novant Health New Hanover Regional Medical Center",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Neighborhood Assistance Corporation of America": {
+            "company_code": "318845",
+            "company_name": "Neighborhood Assistance Corporation of America",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "KTH Royal Institute of Technology": {
+            "company_code": "138241",
+            "company_name": "KTH Royal Institute of Technology",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Karolinska Institute": {
+            "company_code": "340678",
+            "company_name": "Karolinska Institute",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "AIESEC": {
+            "company_code": "463422",
+            "company_name": "AIESEC",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Columbia University": {
+            "company_code": "2748",
+            "company_name": "Columbia University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Washington": {
+            "company_code": "3030",
+            "company_name": "University of Washington",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Greenpeace": {
+            "company_code": "9123",
+            "company_name": "Greenpeace",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Save the Children": {
+            "company_code": "16936",
+            "company_name": "Save the Children",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Oxfam": {
+            "company_code": "35565",
+            "company_name": "Oxfam",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "M\u00e9decins Sans Fronti\u00e8res": {
+            "company_code": "574190",
+            "company_name": "M\u00e9decins Sans Fronti\u00e8res",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Northside Hospital": {
+            "company_code": "20642",
+            "company_name": "Northside Hospital",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "NYU (New York University)": {
+            "company_code": "2917",
+            "company_name": "NYU (New York University)",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Nanyang Technological University": {
+            "company_code": "158708",
+            "company_name": "Nanyang Technological University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Swedish": {
+            "company_code": "20077",
+            "company_name": "Swedish",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNHCR": {
+            "company_code": "336803",
+            "company_name": "UNHCR",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNHCR": {
+            "company_code": "336803",
+            "company_name": "UNHCR",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNICEF": {
+            "company_code": "16869",
+            "company_name": "UNICEF",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "World Wildlife Fund": {
+            "company_code": "16152",
+            "company_name": "World Wildlife Fund",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UC San Diego": {
+            "company_code": "32523",
+            "company_name": "UC San Diego",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Mount Sinai Health System": {
+            "company_code": "121517",
+            "company_name": "Mount Sinai Health System",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "American Red Cross": {
+            "company_code": "2707",
+            "company_name": "American Red Cross",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Georgia Tech": {
+            "company_code": "33375",
+            "company_name": "Georgia Tech",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "International Committee of the Red Cross": {
+            "company_code": "320386",
+            "company_name": "International Committee of the Red Cross",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "KIT": {
+            "company_code": "389726",
+            "company_name": "KIT",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "West Virginia University": {
+            "company_code": "33438",
+            "company_name": "West Virginia University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Fraunhofer-Gesellschaft": {
+            "company_code": "110766",
+            "company_name": "Fraunhofer-Gesellschaft",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Connecticut": {
+            "company_code": "33454",
+            "company_name": "University of Connecticut",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Plan International": {
+            "company_code": "350737",
+            "company_name": "Plan International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "George Mason University": {
+            "company_code": "22413",
+            "company_name": "George Mason University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Amnesty International": {
+            "company_code": "14709",
+            "company_name": "Amnesty International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "The Church of Jesus Christ of Latter-day Saints": {
+            "company_code": "122747",
+            "company_name": "The Church of Jesus Christ of Latter-day Saints",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Aalto University": {
+            "company_code": "340372",
+            "company_name": "Aalto University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Educational Testing Service": {
+            "company_code": "7263",
+            "company_name": "Educational Testing Service",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Hong Kong": {
+            "company_code": "302067",
+            "company_name": "University of Hong Kong",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Ronald McDonald House Charities": {
+            "company_code": "28841",
+            "company_name": "Ronald McDonald House Charities",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Delft University of Technology": {
+            "company_code": "150407",
+            "company_name": "Delft University of Technology",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Warwick": {
+            "company_code": "35493",
+            "company_name": "University of Warwick",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Cambridge University Press & Assessment": {
+            "company_code": "320424",
+            "company_name": "Cambridge University Press & Assessment",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "RWTH Aachen University": {
+            "company_code": "230428",
+            "company_name": "RWTH Aachen University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Helsinki": {
+            "company_code": "390938",
+            "company_name": "University of Helsinki",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Trinity College Dublin": {
+            "company_code": "307231",
+            "company_name": "Trinity College Dublin",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "TU/e": {
+            "company_code": "156538",
+            "company_name": "TU/e",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Ashoka": {
+            "company_code": "150523",
+            "company_name": "Ashoka",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "ESADE": {
+            "company_code": "411302",
+            "company_name": "ESADE",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Danish Refugee Council": {
+            "company_code": "547080",
+            "company_name": "Danish Refugee Council",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Universiteit Utrecht": {
+            "company_code": "157371",
+            "company_name": "Universiteit Utrecht",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Bocconi University": {
+            "company_code": "329368",
+            "company_name": "Bocconi University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNFPA": {
+            "company_code": "350947",
+            "company_name": "UNFPA",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "WaterAid": {
+            "company_code": "582352",
+            "company_name": "WaterAid",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "WaterAid": {
+            "company_code": "582352",
+            "company_name": "WaterAid",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Lincoln": {
+            "company_code": "665429",
+            "company_name": "University of Lincoln",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "TED Conferences": {
+            "company_code": "680044",
+            "company_name": "TED Conferences",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "ITB": {
+            "company_code": "384193",
+            "company_name": "ITB",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Stockholm International Water Institute": {
+            "company_code": "592881",
+            "company_name": "Stockholm International Water Institute",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "EIT Digital": {
+            "company_code": "1382960",
+            "company_name": "EIT Digital",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "EIT Digital": {
+            "company_code": "1382960",
+            "company_name": "EIT Digital",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "EIT Digital": {
+            "company_code": "1382960",
+            "company_name": "EIT Digital",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "EIT Digital": {
+            "company_code": "1382960",
+            "company_name": "EIT Digital",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "IESE Business School": {
+            "company_code": "223151",
+            "company_name": "IESE Business School",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Tyndall National Institute": {
+            "company_code": "522563",
+            "company_name": "Tyndall National Institute",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Tyndall National Institute": {
+            "company_code": "522563",
+            "company_name": "Tyndall National Institute",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Ludwig Cancer Research": {
+            "company_code": "392652",
+            "company_name": "Ludwig Cancer Research",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    }
+]

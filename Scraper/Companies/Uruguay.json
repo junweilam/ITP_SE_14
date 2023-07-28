@@ -1,0 +1,90 @@
+[
+    {
+        "Northside Hospital": {
+            "company_code": "20642",
+            "company_name": "Northside Hospital",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNICEF": {
+            "company_code": "16869",
+            "company_name": "UNICEF",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Universidad de la Rep\u00fablica": {
+            "company_code": "879351",
+            "company_name": "Universidad de la Rep\u00fablica",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "AIESEC": {
+            "company_code": "463422",
+            "company_name": "AIESEC",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Kansas State University": {
+            "company_code": "25692",
+            "company_name": "Kansas State University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Plan Ceibal": {
+            "company_code": "771219",
+            "company_name": "Plan Ceibal",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Smithsonian": {
+            "company_code": "2982",
+            "company_name": "Smithsonian",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNFPA": {
+            "company_code": "350947",
+            "company_name": "UNFPA",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Antelope Valley Medical Center": {
+            "company_code": "121848",
+            "company_name": "Antelope Valley Medical Center",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "SOS Children's Villages International": {
+            "company_code": "778278",
+            "company_name": "SOS Children's Villages International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "World Trade Centers Association": {
+            "company_code": "783675",
+            "company_name": "World Trade Centers Association",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    }
+]

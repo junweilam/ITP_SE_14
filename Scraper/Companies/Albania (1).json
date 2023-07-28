@@ -1,0 +1,122 @@
+[
+    {
+        "YMCA": {
+            "company_code": "3046",
+            "company_name": "YMCA",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNICEF": {
+            "company_code": "16869",
+            "company_name": "UNICEF",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Imperial College London": {
+            "company_code": "36783",
+            "company_name": "Imperial College London",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "British Council": {
+            "company_code": "117008",
+            "company_name": "British Council",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "AIESEC": {
+            "company_code": "463422",
+            "company_name": "AIESEC",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Save the Children International": {
+            "company_code": "495188",
+            "company_name": "Save the Children International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Open Society Foundations": {
+            "company_code": "667335",
+            "company_name": "Open Society Foundations",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "National Democratic Institute": {
+            "company_code": "150117",
+            "company_name": "National Democratic Institute",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "National Democratic Institute": {
+            "company_code": "150117",
+            "company_name": "National Democratic Institute",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "American Hospital Association": {
+            "company_code": "31598",
+            "company_name": "American Hospital Association",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Interactive College of Technology (ICT)": {
+            "company_code": "224161",
+            "company_name": "Interactive College of Technology (ICT)",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Quality Schools International": {
+            "company_code": "417779",
+            "company_name": "Quality Schools International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "SwissContact": {
+            "company_code": "513358",
+            "company_name": "SwissContact",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Helvetas Swiss Intercooperation": {
+            "company_code": "928893",
+            "company_name": "Helvetas Swiss Intercooperation",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "AIBA": {
+            "company_code": "352733",
+            "company_name": "AIBA",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    }
+]

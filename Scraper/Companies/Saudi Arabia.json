@@ -1,0 +1,618 @@
+[
+  {
+    "British Council": {
+      "company_code": "117008",
+      "company_name": "British Council",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Northside Hospital": {
+      "company_code": "20642",
+      "company_name": "Northside Hospital",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "University of Michigan": {
+      "company_code": "3023",
+      "company_name": "University of Michigan",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Princess Nora University": {
+      "company_code": "871953",
+      "company_name": "Princess Nora University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Cleveland Clinic": {
+      "company_code": "17787",
+      "company_name": "Cleveland Clinic",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Kaiser Permanente": {
+      "company_code": "19466",
+      "company_name": "Kaiser Permanente",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "YMCA": {
+      "company_code": "3046",
+      "company_name": "YMCA",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Goodwill": {
+      "company_code": "2802",
+      "company_name": "Goodwill",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Andalusia for Medical Services": {
+      "company_code": "365738",
+      "company_name": "Andalusia for Medical Services",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Stanford University": {
+      "company_code": "2989",
+      "company_name": "Stanford University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "UC San Diego": {
+      "company_code": "32523",
+      "company_name": "UC San Diego",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Johns Hopkins Medicine": {
+      "company_code": "4658",
+      "company_name": "Johns Hopkins Medicine",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Penn State": {
+      "company_code": "2931",
+      "company_name": "Penn State",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Imperial College London": {
+      "company_code": "36783",
+      "company_name": "Imperial College London",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Almana General Hospital": {
+      "company_code": "602681",
+      "company_name": "Almana General Hospital",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Arizona State University": {
+      "company_code": "29302",
+      "company_name": "Arizona State University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Teach for America": {
+      "company_code": "105049",
+      "company_name": "Teach for America",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Memorial Sloan Kettering Cancer Center": {
+      "company_code": "4711",
+      "company_name": "Memorial Sloan Kettering Cancer Center",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Harvard University": {
+      "company_code": "2817",
+      "company_name": "Harvard University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "University of Chicago": {
+      "company_code": "3016",
+      "company_name": "University of Chicago",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "University of British Columbia": {
+      "company_code": "151190",
+      "company_name": "University of British Columbia",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Georgia Tech": {
+      "company_code": "33375",
+      "company_name": "Georgia Tech",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "National University of Singapore": {
+      "company_code": "222778",
+      "company_name": "National University of Singapore",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "University of Wisconsin-Madison": {
+      "company_code": "582975",
+      "company_name": "University of Wisconsin-Madison",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "CCC": {
+      "company_code": "396341",
+      "company_name": "CCC",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Boston University": {
+      "company_code": "3734",
+      "company_name": "Boston University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "AIESEC": {
+      "company_code": "463422",
+      "company_name": "AIESEC",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "West Virginia University": {
+      "company_code": "33438",
+      "company_name": "West Virginia University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "CHI": {
+      "company_code": "4652",
+      "company_name": "CHI",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "George Washington University": {
+      "company_code": "3733",
+      "company_name": "George Washington University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "University of Missouri": {
+      "company_code": "2904",
+      "company_name": "University of Missouri",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "New School": {
+      "company_code": "26556",
+      "company_name": "New School",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "McMaster University": {
+      "company_code": "34287",
+      "company_name": "McMaster University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Dana-Farber Cancer Institute": {
+      "company_code": "17892",
+      "company_name": "Dana-Farber Cancer Institute",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Portland State University": {
+      "company_code": "29513",
+      "company_name": "Portland State University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "University Hospitals": {
+      "company_code": "19460",
+      "company_name": "University Hospitals",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "J-PAL": {
+      "company_code": "329669",
+      "company_name": "J-PAL",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Southern New Hampshire University": {
+      "company_code": "129250",
+      "company_name": "Southern New Hampshire University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Queen's University": {
+      "company_code": "34294",
+      "company_name": "Queen's University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Monash University": {
+      "company_code": "153896",
+      "company_name": "Monash University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Monash University": {
+      "company_code": "153896",
+      "company_name": "Monash University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "AQA": {
+      "company_code": "516520",
+      "company_name": "AQA",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "University of Colorado Denver": {
+      "company_code": "151729",
+      "company_name": "University of Colorado Denver",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "IEEE": {
+      "company_code": "25076",
+      "company_name": "IEEE",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "IEEE": {
+      "company_code": "25076",
+      "company_name": "IEEE",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "RWTH Aachen University": {
+      "company_code": "230428",
+      "company_name": "RWTH Aachen University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "World Wildlife Fund": {
+      "company_code": "16152",
+      "company_name": "World Wildlife Fund",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "World Wildlife Fund": {
+      "company_code": "16152",
+      "company_name": "World Wildlife Fund",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Bill & Melinda Gates Foundation": {
+      "company_code": "9097",
+      "company_name": "Bill & Melinda Gates Foundation",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "The Johns Hopkins Hospital": {
+      "company_code": "121774",
+      "company_name": "The Johns Hopkins Hospital",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "UNHCR": {
+      "company_code": "336803",
+      "company_name": "UNHCR",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Muscular Dystrophy Association": {
+      "company_code": "17718",
+      "company_name": "Muscular Dystrophy Association",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "The Open University": {
+      "company_code": "37653",
+      "company_name": "The Open University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "World Health Organization": {
+      "company_code": "11724",
+      "company_name": "World Health Organization",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Motability Operations": {
+      "company_code": "231606",
+      "company_name": "Motability Operations",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "University of Hertfordshire": {
+      "company_code": "417368",
+      "company_name": "University of Hertfordshire",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Special Olympics": {
+      "company_code": "21970",
+      "company_name": "Special Olympics",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "University of Business and Technology": {
+      "company_code": "1353769",
+      "company_name": "University of Business and Technology",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "ESADE": {
+      "company_code": "411302",
+      "company_name": "ESADE",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Taif University": {
+      "company_code": "809203",
+      "company_name": "Taif University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Taif University": {
+      "company_code": "809203",
+      "company_name": "Taif University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Khalifa University": {
+      "company_code": "500688",
+      "company_name": "Khalifa University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Royal Society of Chemistry": {
+      "company_code": "765345",
+      "company_name": "Royal Society of Chemistry",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Liverpool John Moores University": {
+      "company_code": "503294",
+      "company_name": "Liverpool John Moores University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Liverpool John Moores University": {
+      "company_code": "503294",
+      "company_name": "Liverpool John Moores University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Amideast": {
+      "company_code": "391400",
+      "company_name": "Amideast",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Dominican University": {
+      "company_code": "128358",
+      "company_name": "Dominican University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Dominican University": {
+      "company_code": "128358",
+      "company_name": "Dominican University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Centrepoint": {
+      "company_code": "791834",
+      "company_name": "Centrepoint",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "The Asia Foundation": {
+      "company_code": "259383",
+      "company_name": "The Asia Foundation",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Bibliotheca Alexandrina": {
+      "company_code": "31768",
+      "company_name": "Bibliotheca Alexandrina",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Lincoln University": {
+      "company_code": "128484",
+      "company_name": "Lincoln University",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Bismarck State College": {
+      "company_code": "130144",
+      "company_name": "Bismarck State College",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Newlife Charity for Disabled Children": {
+      "company_code": "768019",
+      "company_name": "Newlife Charity for Disabled Children",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "ECEC": {
+      "company_code": "759782",
+      "company_name": "ECEC",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Green Crescent Hospital": {
+      "company_code": "1859580",
+      "company_name": "Green Crescent Hospital",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  },
+  {
+    "Common Goal": {
+      "company_code": "6525865",
+      "company_name": "Common Goal",
+      "Reviews": "No",
+      "Interviews": "No"
+    }
+  }
+]

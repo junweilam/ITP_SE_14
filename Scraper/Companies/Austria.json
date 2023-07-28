@@ -1,0 +1,666 @@
+[
+    {
+        "TU Wien": {
+            "company_code": "228201",
+            "company_name": "TU Wien",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Technische Universit\u00e4t Graz": {
+            "company_code": "307218",
+            "company_name": "Technische Universit\u00e4t Graz",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "IAEA": {
+            "company_code": "474090",
+            "company_name": "IAEA",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "AIESEC": {
+            "company_code": "463422",
+            "company_name": "AIESEC",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Medizinische Universit\u00e4t Wien": {
+            "company_code": "428286",
+            "company_name": "Medizinische Universit\u00e4t Wien",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "British Council": {
+            "company_code": "117008",
+            "company_name": "British Council",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Universit\u00e4t Innsbruck": {
+            "company_code": "308847",
+            "company_name": "Universit\u00e4t Innsbruck",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Wirtschaftsuniversit\u00e4t Wien": {
+            "company_code": "567072",
+            "company_name": "Wirtschaftsuniversit\u00e4t Wien",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Fraunhofer-Gesellschaft": {
+            "company_code": "110766",
+            "company_name": "Fraunhofer-Gesellschaft",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Washington": {
+            "company_code": "3030",
+            "company_name": "University of Washington",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "SOS Children's Villages International": {
+            "company_code": "778278",
+            "company_name": "SOS Children's Villages International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "ETH Zurich": {
+            "company_code": "119151",
+            "company_name": "ETH Zurich",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Universit\u00e4t f\u00fcr Bodenkultur Wien": {
+            "company_code": "741263",
+            "company_name": "Universit\u00e4t f\u00fcr Bodenkultur Wien",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "World Wildlife Fund": {
+            "company_code": "16152",
+            "company_name": "World Wildlife Fund",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Montanuniversit\u00e4t Leoben": {
+            "company_code": "474421",
+            "company_name": "Montanuniversit\u00e4t Leoben",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Greenpeace": {
+            "company_code": "9123",
+            "company_name": "Greenpeace",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Michigan": {
+            "company_code": "3023",
+            "company_name": "University of Michigan",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Amnesty International": {
+            "company_code": "14709",
+            "company_name": "Amnesty International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Stanford University": {
+            "company_code": "2989",
+            "company_name": "Stanford University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "KIT": {
+            "company_code": "389726",
+            "company_name": "KIT",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "KIT": {
+            "company_code": "389726",
+            "company_name": "KIT",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Toronto": {
+            "company_code": "31043",
+            "company_name": "University of Toronto",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Cleveland Clinic": {
+            "company_code": "17787",
+            "company_name": "Cleveland Clinic",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Northside Hospital": {
+            "company_code": "20642",
+            "company_name": "Northside Hospital",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Northside Hospital": {
+            "company_code": "20642",
+            "company_name": "Northside Hospital",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "MIT": {
+            "company_code": "2889",
+            "company_name": "MIT",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNICEF": {
+            "company_code": "16869",
+            "company_name": "UNICEF",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Medizinische Universit\u00e4t Innsbruck": {
+            "company_code": "608469",
+            "company_name": "Medizinische Universit\u00e4t Innsbruck",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "RIT (Rochester Institute of Technology)": {
+            "company_code": "23545",
+            "company_name": "RIT (Rochester Institute of Technology)",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "IST Austria": {
+            "company_code": "868988",
+            "company_name": "IST Austria",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Oregon Health & Science University": {
+            "company_code": "23783",
+            "company_name": "Oregon Health & Science University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNHCR": {
+            "company_code": "336803",
+            "company_name": "UNHCR",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Webster University": {
+            "company_code": "23442",
+            "company_name": "Webster University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "World Food Programme": {
+            "company_code": "328056",
+            "company_name": "World Food Programme",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "International Centre for Migration Policy Development": {
+            "company_code": "774240",
+            "company_name": "International Centre for Migration Policy Development",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Baylor University": {
+            "company_code": "4391",
+            "company_name": "Baylor University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "RWTH Aachen University": {
+            "company_code": "230428",
+            "company_name": "RWTH Aachen University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen": {
+            "company_code": "523526",
+            "company_name": "Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Charit\u00e9": {
+            "company_code": "246505",
+            "company_name": "Charit\u00e9",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Medizinische Universit\u00e4t Graz": {
+            "company_code": "696021",
+            "company_name": "Medizinische Universit\u00e4t Graz",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "CTBTO": {
+            "company_code": "644144",
+            "company_name": "CTBTO",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Bill & Melinda Gates Foundation": {
+            "company_code": "9097",
+            "company_name": "Bill & Melinda Gates Foundation",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "M\u00e9decins Sans Fronti\u00e8res": {
+            "company_code": "574190",
+            "company_name": "M\u00e9decins Sans Fronti\u00e8res",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Trinity College Dublin": {
+            "company_code": "307231",
+            "company_name": "Trinity College Dublin",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University College Dublin": {
+            "company_code": "221122",
+            "company_name": "University College Dublin",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Universit\u00e4t Z\u00fcrich": {
+            "company_code": "142691",
+            "company_name": "Universit\u00e4t Z\u00fcrich",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Ashoka": {
+            "company_code": "150523",
+            "company_name": "Ashoka",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "World Health Organization": {
+            "company_code": "11724",
+            "company_name": "World Health Organization",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "IU Internationale Hochschule": {
+            "company_code": "1332142",
+            "company_name": "IU Internationale Hochschule",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "FH Salzburg": {
+            "company_code": "390804",
+            "company_name": "FH Salzburg",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "FH Joanneum": {
+            "company_code": "742613",
+            "company_name": "FH Joanneum",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Goethe-Institut": {
+            "company_code": "308489",
+            "company_name": "Goethe-Institut",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Dublin City University": {
+            "company_code": "229473",
+            "company_name": "Dublin City University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Toronto International Film Festival": {
+            "company_code": "306892",
+            "company_name": "Toronto International Film Festival",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "TU Munich": {
+            "company_code": "459953",
+            "company_name": "TU Munich",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "J-PAL": {
+            "company_code": "329669",
+            "company_name": "J-PAL",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Klagenfurt University": {
+            "company_code": "546844",
+            "company_name": "Klagenfurt University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Asklepios": {
+            "company_code": "349990",
+            "company_name": "Asklepios",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "CARE International": {
+            "company_code": "1258306",
+            "company_name": "CARE International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "SOS-Kinderdorf": {
+            "company_code": "935405",
+            "company_name": "SOS-Kinderdorf",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "MCI Management Center Innsbruck": {
+            "company_code": "1189140",
+            "company_name": "MCI Management Center Innsbruck",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "FH K\u00e4rnten": {
+            "company_code": "677386",
+            "company_name": "FH K\u00e4rnten",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Universit\u00e4tsklinikum Freiburg": {
+            "company_code": "948453",
+            "company_name": "Universit\u00e4tsklinikum Freiburg",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "M\u00e9decins Sans Fronti\u00e8res": {
+            "company_code": "596196",
+            "company_name": "M\u00e9decins Sans Fronti\u00e8res",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Universit\u00e4t f\u00fcr Weiterbildung Krems": {
+            "company_code": "1067182",
+            "company_name": "Universit\u00e4t f\u00fcr Weiterbildung Krems",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "St Mary\u2019s University": {
+            "company_code": "2374019",
+            "company_name": "St Mary\u2019s University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "St Mary\u2019s University": {
+            "company_code": "2374019",
+            "company_name": "St Mary\u2019s University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "St Mary\u2019s University": {
+            "company_code": "2374019",
+            "company_name": "St Mary\u2019s University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Pioneers": {
+            "company_code": "402238",
+            "company_name": "Pioneers",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Seefar": {
+            "company_code": "1939364",
+            "company_name": "Seefar",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "AMEOS": {
+            "company_code": "931024",
+            "company_name": "AMEOS",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Applied Sciences and Arts of Southern Switzerland": {
+            "company_code": "394875",
+            "company_name": "University of Applied Sciences and Arts of Southern Switzerland",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Hoyleton Youth & Family Services": {
+            "company_code": "829394",
+            "company_name": "Hoyleton Youth & Family Services",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Barmherzige Br\u00fcder": {
+            "company_code": "934571",
+            "company_name": "Barmherzige Br\u00fcder",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Salzburg Global Seminar": {
+            "company_code": "647099",
+            "company_name": "Salzburg Global Seminar",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "LICHT F\u00dcR DIE WELT": {
+            "company_code": "843667",
+            "company_name": "LICHT F\u00dcR DIE WELT",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "IQOQI": {
+            "company_code": "610328",
+            "company_name": "IQOQI",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "InterConnection": {
+            "company_code": "833784",
+            "company_name": "InterConnection",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Little Talks": {
+            "company_code": "3385583",
+            "company_name": "Little Talks",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Lebenshilfe Tirol": {
+            "company_code": "732134",
+            "company_name": "Lebenshilfe Tirol",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Lauder Business School": {
+            "company_code": "231158",
+            "company_name": "Lauder Business School",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Lauder Business School": {
+            "company_code": "231158",
+            "company_name": "Lauder Business School",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "IHS Vienna": {
+            "company_code": "592252",
+            "company_name": "IHS Vienna",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    }
+]

@@ -1,0 +1,722 @@
+[
+    {
+        "The Hebrew University of Jerusalem": {
+            "company_code": "247609",
+            "company_name": "The Hebrew University of Jerusalem",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "YMCA": {
+            "company_code": "3046",
+            "company_name": "YMCA",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "NYU (New York University)": {
+            "company_code": "2917",
+            "company_name": "NYU (New York University)",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "The Open University": {
+            "company_code": "37653",
+            "company_name": "The Open University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "British Council": {
+            "company_code": "117008",
+            "company_name": "British Council",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Gemological Institute of America": {
+            "company_code": "242025",
+            "company_name": "Gemological Institute of America",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Notre Dame": {
+            "company_code": "25093",
+            "company_name": "University of Notre Dame",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Educational Testing Service": {
+            "company_code": "7263",
+            "company_name": "Educational Testing Service",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Greenpeace": {
+            "company_code": "9123",
+            "company_name": "Greenpeace",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Harvard University": {
+            "company_code": "2817",
+            "company_name": "Harvard University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University College London": {
+            "company_code": "35514",
+            "company_name": "University College London",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Penn State": {
+            "company_code": "2931",
+            "company_name": "Penn State",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "InterAction": {
+            "company_code": "454271",
+            "company_name": "InterAction",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Teach for America": {
+            "company_code": "105049",
+            "company_name": "Teach for America",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "International Committee of the Red Cross": {
+            "company_code": "320386",
+            "company_name": "International Committee of the Red Cross",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UC Davis": {
+            "company_code": "32514",
+            "company_name": "UC Davis",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "JDC (The Joint)": {
+            "company_code": "501260",
+            "company_name": "JDC (The Joint)",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Oxfam": {
+            "company_code": "35565",
+            "company_name": "Oxfam",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Northside Hospital": {
+            "company_code": "20642",
+            "company_name": "Northside Hospital",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Arizona State University": {
+            "company_code": "29302",
+            "company_name": "Arizona State University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Minnesota": {
+            "company_code": "3735",
+            "company_name": "University of Minnesota",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Memorial Sloan Kettering Cancer Center": {
+            "company_code": "4711",
+            "company_name": "Memorial Sloan Kettering Cancer Center",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Maryland": {
+            "company_code": "129869",
+            "company_name": "University of Maryland",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Rutgers University": {
+            "company_code": "22285",
+            "company_name": "Rutgers University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Rutgers University": {
+            "company_code": "22285",
+            "company_name": "Rutgers University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "World Food Programme": {
+            "company_code": "328056",
+            "company_name": "World Food Programme",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNHCR": {
+            "company_code": "336803",
+            "company_name": "UNHCR",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Imperial College London": {
+            "company_code": "36783",
+            "company_name": "Imperial College London",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNICEF": {
+            "company_code": "16869",
+            "company_name": "UNICEF",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Caltech (California)": {
+            "company_code": "22139",
+            "company_name": "Caltech (California)",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Boston Children's Hospital": {
+            "company_code": "18645",
+            "company_name": "Boston Children's Hospital",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Carnegie Mellon University": {
+            "company_code": "20962",
+            "company_name": "Carnegie Mellon University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of the People": {
+            "company_code": "1262980",
+            "company_name": "University of the People",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "ICL": {
+            "company_code": "383911",
+            "company_name": "ICL",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "St. Jude Children's Research Hospital": {
+            "company_code": "28315",
+            "company_name": "St. Jude Children's Research Hospital",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Amnesty International": {
+            "company_code": "14709",
+            "company_name": "Amnesty International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Montefiore Medical": {
+            "company_code": "2905",
+            "company_name": "Montefiore Medical",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "The Church of Jesus Christ of Latter-day Saints": {
+            "company_code": "122747",
+            "company_name": "The Church of Jesus Christ of Latter-day Saints",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Beth Israel Lahey Health": {
+            "company_code": "792801",
+            "company_name": "Beth Israel Lahey Health",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Catholic Relief Services": {
+            "company_code": "135790",
+            "company_name": "Catholic Relief Services",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Hillel International": {
+            "company_code": "269470",
+            "company_name": "Hillel International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Warwick": {
+            "company_code": "35493",
+            "company_name": "University of Warwick",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "YWCA": {
+            "company_code": "5457",
+            "company_name": "YWCA",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "The Nature Conservancy": {
+            "company_code": "14686",
+            "company_name": "The Nature Conservancy",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Kent State": {
+            "company_code": "28508",
+            "company_name": "Kent State",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Danish Refugee Council": {
+            "company_code": "547080",
+            "company_name": "Danish Refugee Council",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "New School": {
+            "company_code": "26556",
+            "company_name": "New School",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Manitoba": {
+            "company_code": "223796",
+            "company_name": "University of Manitoba",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Jumpstart": {
+            "company_code": "385369",
+            "company_name": "Jumpstart",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "World Health Organization": {
+            "company_code": "11724",
+            "company_name": "World Health Organization",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "LifeBridge Health": {
+            "company_code": "21518",
+            "company_name": "LifeBridge Health",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Goethe-Institut": {
+            "company_code": "308489",
+            "company_name": "Goethe-Institut",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "SOS Children's Villages International": {
+            "company_code": "778278",
+            "company_name": "SOS Children's Villages International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "National Democratic Institute": {
+            "company_code": "150117",
+            "company_name": "National Democratic Institute",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Vinfen": {
+            "company_code": "250691",
+            "company_name": "Vinfen",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "HKTDC": {
+            "company_code": "701129",
+            "company_name": "HKTDC",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Elwyn": {
+            "company_code": "23489",
+            "company_name": "Elwyn",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Milken Institute": {
+            "company_code": "262047",
+            "company_name": "Milken Institute",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Touro College and University System": {
+            "company_code": "31558",
+            "company_name": "Touro College and University System",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "ITB": {
+            "company_code": "384193",
+            "company_name": "ITB",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Advocates": {
+            "company_code": "585198",
+            "company_name": "Advocates",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Howard Brown": {
+            "company_code": "422519",
+            "company_name": "Howard Brown",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "CCC": {
+            "company_code": "396341",
+            "company_name": "CCC",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Frontline": {
+            "company_code": "1825940",
+            "company_name": "Frontline",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "ITMO University": {
+            "company_code": "869792",
+            "company_name": "ITMO University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Orbit Group": {
+            "company_code": "494602",
+            "company_name": "Orbit Group",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "International Fellowship of Christians and Jews": {
+            "company_code": "730584",
+            "company_name": "International Fellowship of Christians and Jews",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Social Finance": {
+            "company_code": "900641",
+            "company_name": "Social Finance",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Amideast": {
+            "company_code": "391400",
+            "company_name": "Amideast",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "CauseMatch": {
+            "company_code": "1668789",
+            "company_name": "CauseMatch",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "TAMID Group": {
+            "company_code": "816951",
+            "company_name": "TAMID Group",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Maof": {
+            "company_code": "38307",
+            "company_name": "Maof",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Universit\u00e9 Paris Dauphine": {
+            "company_code": "194544",
+            "company_name": "Universit\u00e9 Paris Dauphine",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "John Brown University": {
+            "company_code": "29111",
+            "company_name": "John Brown University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "A Safe Haven Foundation": {
+            "company_code": "469497",
+            "company_name": "A Safe Haven Foundation",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Noble": {
+            "company_code": "974875",
+            "company_name": "Noble",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "The Scouts Association": {
+            "company_code": "1165358",
+            "company_name": "The Scouts Association",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Combined Jewish Philanthropies": {
+            "company_code": "312937",
+            "company_name": "Combined Jewish Philanthropies",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Kabbalah Centre International": {
+            "company_code": "294497",
+            "company_name": "Kabbalah Centre International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "CRMC": {
+            "company_code": "809218",
+            "company_name": "CRMC",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Army Residence Community": {
+            "company_code": "417270",
+            "company_name": "Army Residence Community",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Jews for Jesus": {
+            "company_code": "269430",
+            "company_name": "Jews for Jesus",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Melanoma Research Foundation": {
+            "company_code": "1176551",
+            "company_name": "Melanoma Research Foundation",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Noyes Health": {
+            "company_code": "1766385",
+            "company_name": "Noyes Health",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "MassChallenge": {
+            "company_code": "650485",
+            "company_name": "MassChallenge",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Hillel Yaffe Medical Center": {
+            "company_code": "587367",
+            "company_name": "Hillel Yaffe Medical Center",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Youth Opportunities Unlimited": {
+            "company_code": "857201",
+            "company_name": "Youth Opportunities Unlimited",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "PROCEED": {
+            "company_code": "453808",
+            "company_name": "PROCEED",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Shalom Park": {
+            "company_code": "1612378",
+            "company_name": "Shalom Park",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Robin Hood Israel Foundation": {
+            "company_code": "6834805",
+            "company_name": "Robin Hood Israel Foundation",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    }
+]

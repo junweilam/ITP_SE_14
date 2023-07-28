@@ -1,0 +1,34 @@
+[
+    {
+        "American Red Cross": {
+            "company_code": "2707",
+            "company_name": "American Red Cross",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Steward Health Care System": {
+            "company_code": "401891",
+            "company_name": "Steward Health Care System",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNHCR": {
+            "company_code": "336803",
+            "company_name": "UNHCR",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "International Centre for Migration Policy Development": {
+            "company_code": "774240",
+            "company_name": "International Centre for Migration Policy Development",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    }
+]

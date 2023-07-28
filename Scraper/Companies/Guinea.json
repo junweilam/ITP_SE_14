@@ -1,0 +1,322 @@
+[
+    {
+        "YMCA": {
+            "company_code": "3046",
+            "company_name": "YMCA",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "The Church of Jesus Christ of Latter-day Saints": {
+            "company_code": "122747",
+            "company_name": "The Church of Jesus Christ of Latter-day Saints",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "DePaul University": {
+            "company_code": "5460",
+            "company_name": "DePaul University",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Catholic Relief Services": {
+            "company_code": "135790",
+            "company_name": "Catholic Relief Services",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "ACT": {
+            "company_code": "9897",
+            "company_name": "ACT",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Save the Children": {
+            "company_code": "16936",
+            "company_name": "Save the Children",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Rush University Medical Center": {
+            "company_code": "224107",
+            "company_name": "Rush University Medical Center",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNHCR": {
+            "company_code": "336803",
+            "company_name": "UNHCR",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNICEF": {
+            "company_code": "16869",
+            "company_name": "UNICEF",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "International Committee of the Red Cross": {
+            "company_code": "320386",
+            "company_name": "International Committee of the Red Cross",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Children's National Hospital": {
+            "company_code": "18553",
+            "company_name": "Children's National Hospital",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Plan International": {
+            "company_code": "350737",
+            "company_name": "Plan International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Save the Children International": {
+            "company_code": "495188",
+            "company_name": "Save the Children International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "World Food Programme": {
+            "company_code": "328056",
+            "company_name": "World Food Programme",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "University of Hawai'i": {
+            "company_code": "24746",
+            "company_name": "University of Hawai'i",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Mercy Corps": {
+            "company_code": "32140",
+            "company_name": "Mercy Corps",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "International Republican Institute": {
+            "company_code": "239590",
+            "company_name": "International Republican Institute",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "FINCA International": {
+            "company_code": "293236",
+            "company_name": "FINCA International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Mayan Families": {
+            "company_code": "892929",
+            "company_name": "Mayan Families",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "ChildFund International": {
+            "company_code": "26426",
+            "company_name": "ChildFund International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Food For The Hungry": {
+            "company_code": "300943",
+            "company_name": "Food For The Hungry",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "M\u00e9decins Sans Fronti\u00e8res": {
+            "company_code": "574190",
+            "company_name": "M\u00e9decins Sans Fronti\u00e8res",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNICEF": {
+            "company_code": "16869",
+            "company_name": "UNICEF",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "World Food Programme": {
+            "company_code": "328056",
+            "company_name": "World Food Programme",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Catholic Relief Services": {
+            "company_code": "135790",
+            "company_name": "Catholic Relief Services",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Search for Common Ground": {
+            "company_code": "268355",
+            "company_name": "Search for Common Ground",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Croix-Rouge fran\u00e7aise": {
+            "company_code": "655726",
+            "company_name": "Croix-Rouge fran\u00e7aise",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "International Committee of the Red Cross": {
+            "company_code": "320386",
+            "company_name": "International Committee of the Red Cross",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Amnesty International": {
+            "company_code": "14709",
+            "company_name": "Amnesty International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "ChildFund International": {
+            "company_code": "26426",
+            "company_name": "ChildFund International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "World Health Organization": {
+            "company_code": "11724",
+            "company_name": "World Health Organization",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Plan International": {
+            "company_code": "350737",
+            "company_name": "Plan International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Population Services International": {
+            "company_code": "17026",
+            "company_name": "Population Services International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "National Democratic Institute": {
+            "company_code": "150117",
+            "company_name": "National Democratic Institute",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Jhpiego": {
+            "company_code": "248055",
+            "company_name": "Jhpiego",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "UNFPA": {
+            "company_code": "350947",
+            "company_name": "UNFPA",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Winrock International": {
+            "company_code": "238526",
+            "company_name": "Winrock International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Helen Keller International": {
+            "company_code": "32455",
+            "company_name": "Helen Keller International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Terre des hommes": {
+            "company_code": "686056",
+            "company_name": "Terre des hommes",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    },
+    {
+        "Sightsavers International": {
+            "company_code": "37490",
+            "company_name": "Sightsavers International",
+            "Reviews": "No",
+            "Interviews": "No"
+        }
+    }
+]
