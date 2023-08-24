@@ -1,0 +1,1 @@
+Communication skills are very important. Since most people are biologists it can be a challenging task to explain how a computer program works. The modeling has to be really clear and intuitive. White boxes are preferred.
